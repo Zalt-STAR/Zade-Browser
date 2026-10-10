@@ -94,6 +94,7 @@ else
     fi
 fi
 
-ccache -s > "$LOGS/ccache.txt" 2>&1 || true
+# -vv lists why calls were uncacheable, which is what matters when hits are low.
+ccache -s -vv > "$LOGS/ccache.txt" 2>&1 || true
 cp "$src/out/Default/args.gn" "$LOGS/args.gn" 2>/dev/null || true
 exit 0

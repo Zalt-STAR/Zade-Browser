@@ -83,6 +83,10 @@ def gn_args(config, android, profile='release'):
             'symbol_level = 0',
             'v8_symbol_level = 0',
             'cc_wrapper = "ccache"',
+            # Clang header modules make nearly every compile uncacheable for ccache
+            # (first CI pass: 84% of compiler calls). Chromium already turns them
+            # off for other compiler wrappers; do the same here.
+            'use_clang_modules = false',
             'concurrent_links = 1',
             '',
             '# Identity: installs beside Chrome and Chromium instead of replacing them',
