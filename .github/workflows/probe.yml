@@ -1,0 +1,34 @@
+name: probe
+on:
+  push:
+    branches: [android-build]
+    paths: ['.github/workflows/probe.yml']
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Report runner capacity
+        run: |
+          mkdir -p report
+          {
+            echo "run: $GITHUB_RUN_ID"
+            echo "cores: $(nproc)"; free -g | sed -n 2,3p
+            df -h / /mnt 2>&1
+            findmnt -n -o SOURCE,FSTYPE,SIZE,AVAIL / ; findmnt -n -o SOURCE,FSTYPE,SIZE,AVAIL /mnt || echo "no separate /mnt"
+            swapon --show || true
+            which lvcreate losetup ccache zstd python3 java || true
+            python3 --version; python3 -c "import PIL; print('PIL', PIL.__version__)" || echo "no PIL"
+            lsb_release -ds
+            du -sh /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache /usr/local/share/boost /usr/share/swift /usr/local/.ghcup 2>/dev/null || true
+          } | tee report/runner.txt
+      - name: Publish report
+        run: |
+          git init -q logs && cd logs
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p probe && cp ../report/runner.txt probe/
+          git add -A && git commit -q -m "probe report $GITHUB_RUN_ID"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/android-build-logs
