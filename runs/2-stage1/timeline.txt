@@ -1,0 +1,7 @@
+fork rc=0 seconds=6 disk_free=105G
+fetch rc=0 seconds=604 disk_free=67G
+deps rc=0 seconds=79 disk_free=65G
+hooks rc=0 seconds=25 disk_free=64G
+helium rc=0 seconds=75 disk_free=63G
+brand rc=0 seconds=2 disk_free=63G
+gn rc=1 seconds=14 disk_free=61G
