@@ -115,9 +115,12 @@ stage_helium() {
     say "applying Helium's patches"
     "$core/utils/patches.py" apply "$src" "$core/patches"
 
-    say "applying Android guards"
-    patch -p1 --ignore-whitespace --no-backup-if-mismatch --forward \
-        -d "$src" -i "$here/patches/android-guards.patch"
+    say "applying Android fixes"
+    for fix in "$here"/patches/*.patch; do
+        echo "  $(basename "$fix")"
+        patch -p1 --ignore-whitespace --no-backup-if-mismatch --forward \
+            -d "$src" -i "$fix"
+    done
 
     if [ "${DOMSUB:-0}" = 1 ]; then
         say "substituting Google domains"

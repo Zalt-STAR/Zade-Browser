@@ -1,0 +1,19 @@
+# Safe Browsing on Android (apply after 01).
+#
+# Helium builds with safe_browsing_mode=0 and wraps the base of
+# //chrome/browser/safe_browsing in if (false). The Android-only block still
+# appended to the now-undefined deps list, which stops gn gen.
+# Found by the first CI run; applies to Chromium 155.0.8059.39. Not compiled.
+--- a/chrome/browser/safe_browsing/BUILD.gn
++++ b/chrome/browser/safe_browsing/BUILD.gn
+@@ -121,7 +121,9 @@
+   # Note: is_android is not equivalent to safe_browsing_mode == 2.
+   # Sources and dependencies added to this block must not depend on anything
+   # requiring safe_browsing_mode != 0.
+-  if (is_android) {
++  # Helium compiles this target's base out (the if (false) block above), so with
++  # safe_browsing_mode == 0 there is no deps list to extend on Android either.
++  if (is_android && safe_browsing_mode != 0) {
+     deps += [
+       "//chrome/browser/password_manager/android:utils",
+       "//chrome/browser/ui/android/safe_browsing",

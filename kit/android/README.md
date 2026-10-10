@@ -28,7 +28,7 @@ engine behaviour underneath. Ad blocking needs a different approach on Android
 | --- | --- |
 | `build.sh` | Fetches Chromium for Android, applies Helium and your branding, compiles |
 | `brand_android.py` | App name, launcher icons, package ID, signing settings |
-| `patches/android-guards.patch` | Fixes the five places where Helium's patches break an Android build |
+| `patches/` (applied in order) | Fixes the five places where Helium's patches break an Android build |
 | `triage.py` | Works out, patch by patch, what applies to Android |
 | `TRIAGE.md`, `triage.csv` | Its results for this version |
 
@@ -80,7 +80,7 @@ here adjusts. `triage.py` cannot see Java.
 
 **3. Dependencies on desktop-only code (handled).** Five patches made code
 that is compiled on Android depend on code that is not. The details are in
-`TRIAGE.md`; `patches/android-guards.patch` wraps each one, and with it applied
+`TRIAGE.md`; `patches/` (applied in order) wraps each one, and with it applied
 the triage finds none left. The guard patch applies cleanly but is itself
 uncompiled.
 
