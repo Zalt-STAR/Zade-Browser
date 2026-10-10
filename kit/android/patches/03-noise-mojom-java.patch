@@ -1,0 +1,18 @@
+# Java bindings for the noise-token interface (apply after 02).
+#
+# Blink core mojom targets generate Java on Android and depend on
+# helium_noise, which did not. gn gen: "Unresolved dependencies ...
+# helium_noise_java". Found by CI run 2. Not compiled.
+--- a/third_party/blink/public/mojom/helium_noise/BUILD.gn
++++ b/third_party/blink/public/mojom/helium_noise/BUILD.gn
+@@ -6,6 +6,10 @@
+ 
+ mojom("helium_noise") {
+   generate_blink = true
++
++  # Blink's core mojom targets generate Java bindings on Android and list this
++  # target as a dependency, so it has to provide Java bindings as well.
++  generate_java = true
+   sources = [ "noise_token.mojom" ]
+ 
+   public_deps = [ "//mojo/public/mojom/base" ]
