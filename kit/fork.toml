@@ -1,0 +1,48 @@
+# Your fork's identity. Edit this, then run ./fork.sh
+# Check nobody else is using the name for a browser before you share builds.
+
+[fork]
+name       = "Zade"                  # shown in menus, settings, the About page
+slug       = "zade"                  # binary, package, .desktop file, zade://settings
+rdn        = "io.github.zaltstar.zade"  # app ID; profile lives in ~/.config/<rdn>
+developer  = "Zalt-STAR"
+email      = "Zalt-STAR@users.noreply.github.com"
+homepage   = "https://github.com/Zalt-STAR/Zade-Browser"
+bugtracker = "https://github.com/Zalt-STAR/Zade-Browser/issues"
+summary    = "Web browser based on Helium and Chromium"
+
+# "owner/repo" of your GitHub fork of helium-linux. Used for package download
+# links and AppImage self-updates. Leave empty to turn AppImage self-update off.
+github_repo = "Zalt-STAR/Zade-Browser"
+
+[endpoints]
+# Helium's anonymising proxy for extension installs, uBlock filter lists,
+# spellcheck dictionaries and !bangs. Fine for a personal build; if you hand
+# builds to other people, host your own (github.com/imputnet/helium-services)
+# and put its URL here. Users can also change this in settings.
+services_origin = "https://services.helium.imput.net"
+
+# Where crash reports go. Empty = never uploaded. Do not point this at Helium.
+crash_url = ""
+
+# Browser auto-update feed (macOS and Windows builds only; Linux updates come
+# from your package). The default is a reserved domain that never resolves.
+update_url = "https://updates.invalid/"
+
+[logo]
+tile   = "#14171F"
+accent = "#6FE3B4"
+
+[android]
+# Phone CPU: arm64 for nearly every current phone. Check with
+#   adb shell getprop ro.product.cpu.abi
+target_cpu = "arm64"
+
+# Android package ID. Defaults to the rdn above.
+package = ""
+
+# Your own signing key (create one with keytool). Leave all three empty to sign
+# with Chromium's public debug key, which is only acceptable on your own phone.
+keystore_path = ""
+keystore_name = ""
+keystore_password = ""

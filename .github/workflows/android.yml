@@ -1,0 +1,54 @@
+name: Android build
+
+# Builds the Android APK in chained passes. Each pass runs up to six hours,
+# saves the compiler cache, and hands over to the next until the APK is built
+# or a real error stops it. Logs go to the android-build-logs branch.
+
+on:
+  push:
+    branches: [android-build]
+    paths-ignore:
+      - '**.md'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-build
+  cancel-in-progress: true
+
+jobs:
+  stage1:
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 1
+  stage2:
+    needs: stage1
+    if: needs.stage1.outputs.status == 'timeout'
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 2
+  stage3:
+    needs: stage2
+    if: needs.stage2.outputs.status == 'timeout'
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 3
+  stage4:
+    needs: stage3
+    if: needs.stage3.outputs.status == 'timeout'
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 4
+  stage5:
+    needs: stage4
+    if: needs.stage4.outputs.status == 'timeout'
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 5
+  stage6:
+    needs: stage5
+    if: needs.stage5.outputs.status == 'timeout'
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 6

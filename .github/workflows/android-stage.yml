@@ -1,0 +1,121 @@
+name: android-stage
+
+on:
+  workflow_call:
+    inputs:
+      stage:
+        required: true
+        type: number
+    outputs:
+      status:
+        description: done, timeout or failed
+        value: ${{ jobs.build.outputs.status }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    permissions:
+      contents: write
+    outputs:
+      status: ${{ steps.pass.outputs.status }}
+    env:
+      ROOT: /home/runner/build
+      CCACHE_DIR: /home/runner/ccache
+      JOB_MINUTES: 355
+    steps:
+      - name: Start clock
+        run: echo "JOB_START=$(date +%s)" >> "$GITHUB_ENV"
+
+      - uses: actions/checkout@v4
+
+      - name: Free disk space and add swap
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup \
+            /usr/share/swift /opt/hostedtoolcache/CodeQL /usr/local/share/boost \
+            /usr/local/share/powershell /usr/lib/google-cloud-sdk /opt/az /usr/local/julia* || true
+          sudo fallocate -l 10G /swap2 && sudo chmod 600 /swap2 && sudo mkswap /swap2 && sudo swapon /swap2 || true
+          df -h /; free -g
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ccache
+          python3 -m pip install --user --break-system-packages 'pillow>=10.1'
+          ccache --version | head -1
+
+      - name: Restore compiler cache
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-arm64-${{ github.run_id }}-${{ inputs.stage }}
+          restore-keys: |
+            ccache-arm64-
+
+      - name: Build pass
+        id: pass
+        run: |
+          bash kit/android/ci.sh
+          status="$(cat "$ROOT/logs/status.txt")"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          echo "### Stage ${{ inputs.stage }}: $status" >> "$GITHUB_STEP_SUMMARY"
+          { echo '```'; cat "$ROOT/logs/timeline.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save compiler cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/ccache
+          key: ccache-arm64-${{ github.run_id }}-${{ inputs.stage }}
+
+      - name: Publish logs
+        if: always()
+        run: |
+          L="$ROOT/logs"; mkdir -p "$L"
+          out="runs/${{ github.run_number }}-stage${{ inputs.stage }}"
+          mkdir -p "pub/$out"
+          for f in status.txt failed_stage.txt timeline.txt ccache.txt args.gn; do
+            [ -f "$L/$f" ] && cp "$L/$f" "pub/$out/" || true
+          done
+          # Last lines of every stage log, and every error block from the compile.
+          for f in "$L"/*.log; do
+            [ -f "$f" ] || continue
+            tail -n 250 "$f" > "pub/$out/$(basename "$f" .log).tail.txt"
+          done
+          if [ -f "$L/build.log" ]; then
+            grep -n -B2 -A40 -E '^FAILED|error:|Error:|^ERROR' "$L/build.log" | head -n 6000 \
+              > "pub/$out/errors.txt" || true
+            grep -c -E '^FAILED' "$L/build.log" > "pub/$out/failed_count.txt" || true
+          fi
+          df -h / > "pub/$out/df.txt"
+          cd pub
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          remote="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          # Keep earlier runs: start from the existing branch and add only this run's folder.
+          git fetch -q --depth 1 "$remote" android-build-logs && git reset -q --mixed FETCH_HEAD || true
+          git add "$out"
+          git commit -q -m "logs: run ${{ github.run_number }} stage ${{ inputs.stage }}"
+          git push -q "$remote" HEAD:refs/heads/android-build-logs
+
+      - name: Collect APK
+        if: steps.pass.outputs.status == 'done'
+        run: |
+          mkdir -p apk
+          cp "$ROOT"/*-android/src/out/Default/apks/ChromePublic.apk "apk/zade-android-arm64.apk"
+          ls -la apk
+
+      - name: Upload APK
+        if: steps.pass.outputs.status == 'done'
+        uses: actions/upload-artifact@v4
+        with:
+          name: zade-android-arm64
+          path: apk/*.apk
+          retention-days: 30
+
+      - name: Mark failure
+        if: steps.pass.outputs.status == 'failed'
+        run: |
+          echo "Build pass failed at: $(cat "$ROOT/logs/failed_stage.txt" 2>/dev/null)"
+          exit 1

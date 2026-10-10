@@ -1,0 +1,177 @@
+# Android guards for Helium patches (apply after the core series).
+#
+# Wraps the five places where code that is compiled for Android depends on
+# desktop-only code: the onboarding page, keyboard-shortcut prefs, and three
+# stray includes. Found by triage.py. Verified to apply to Chromium
+# 155.0.8059.39 with Helium 0.19.2.1 patches; NOT compiled.
+--- a/chrome/browser/download/download_target_determiner.cc
++++ b/chrome/browser/download/download_target_determiner.cc
+@@ -43,7 +43,6 @@
+ #include "content/public/browser/browser_thread.h"
+ #include "content/public/browser/download_item_utils.h"
+ #include "content/public/common/buildflags.h"
+-#include "extensions/browser/extension_util.h"
+ #include "extensions/buildflags/buildflags.h"
+ #include "extensions/common/constants.h"
+ #include "net/base/filename_util.h"
+@@ -55,6 +54,7 @@
+ #include "url/origin.h"
+ 
+ #if BUILDFLAG(ENABLE_EXTENSIONS_CORE)
++#include "extensions/browser/extension_util.h"
+ #include "extensions/browser/webstore_installer.h"
+ #include "extensions/common/feature_switch.h"
+ #endif
+--- a/chrome/browser/metrics/tab_stats/tab_stats_tracker.cc
++++ b/chrome/browser/metrics/tab_stats/tab_stats_tracker.cc
+@@ -30,7 +30,6 @@
+ #include "chrome/browser/profiles/profile.h"
+ #include "chrome/browser/profiles/profile_manager.h"
+ #include "chrome/browser/resource_coordinator/lifecycle_unit_state.mojom.h"
+-#include "chrome/browser/ui/helium/helium_layout_state_controller.h"
+ #include "chrome/browser/ui/ui_features.h"
+ #include "chrome/common/buildflags.h"
+ #include "chrome/common/pref_names.h"
+@@ -65,6 +64,7 @@
+ #include "chrome/browser/ui/browser_window/public/browser_collection_observer.h"  // nogncheck
+ #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"  // nogncheck
+ #include "chrome/browser/ui/browser_window/public/browser_window_interface_iterator.h"  // nogncheck
++#include "chrome/browser/ui/helium/helium_layout_state_controller.h"
+ #include "chrome/browser/ui/browser_window/public/global_browser_collection.h"  // nogncheck
+ #include "chrome/browser/ui/tabs/tab_enums.h"
+ #include "chrome/browser/ui/tabs/tab_strip_model.h"
+--- a/chrome/browser/prefs/browser_prefs.cc
++++ b/chrome/browser/prefs/browser_prefs.cc
+@@ -88,7 +88,9 @@
+ #include "chrome/browser/themes/theme_service.h"
+ #include "chrome/browser/tips/core/tips_prefs.h"
+ #include "chrome/browser/tracing/chrome_tracing_delegate.h"
++#if !BUILDFLAG(IS_ANDROID)
+ #include "chrome/browser/ui/browser_shortcuts/browser_shortcut_prefs.h"
++#endif
+ #include "chrome/browser/ui/browser_ui_prefs.h"
+ #include "chrome/browser/ui/network_profile_bubble.h"
+ #include "chrome/browser/ui/performance_controls/performance_controls_metrics.h"
+@@ -1838,7 +1840,9 @@
+   PushMessagingUnsubscribedEntry::RegisterProfilePrefs(registry);
+   QuietNotificationPermissionUiState::RegisterProfilePrefs(registry);
+   regional_capabilities::prefs::RegisterProfilePrefs(registry);
++#if !BUILDFLAG(IS_ANDROID)
+   browser_shortcuts::prefs::RegisterProfilePrefs(registry);
++#endif
+   RegisterBrowserUserPrefs(registry);
+   registry->RegisterBooleanPref(prefs::kRestrictYouTubeCookiesDeletion, false);
+   RegisterGeminiSettingsPrefs(registry);
+--- a/chrome/browser/ui/webui/BUILD.gn
++++ b/chrome/browser/ui/webui/BUILD.gn
+@@ -50,7 +50,6 @@
+     ":gcm_internals_ui",
+     ":net_export_ui",
+     ":ntp_tiles_internals_ui",
+-    ":onboarding",
+     ":signin_internals_ui",
+     ":webui",
+     "//chrome/browser/actor/ui:actor_overlay",
+@@ -93,7 +92,6 @@
+     "//chrome/browser/ui/webui/regional_capabilities_internals",
+     "//chrome/browser/ui/webui/saved_tab_groups_unsupported",
+     "//chrome/browser/ui/webui/segmentation_internals",
+-    "//chrome/browser/ui/webui/settings:mojo_bindings",
+     "//chrome/browser/ui/webui/suggest_internals",
+     "//chrome/browser/ui/webui/sync_internals",
+     "//chrome/browser/ui/webui/translate_internals",
+@@ -113,7 +111,9 @@
+ 
+   if (!is_android) {
+     deps += [
++      ":onboarding",
+       "//chrome/browser/actor/ui:actor_overlay_web_view",
++      "//chrome/browser/ui/webui/settings:mojo_bindings",
+       "//chrome/browser/ui/webui/access_code_cast",
+       "//chrome/browser/ui/webui/app_service_internals",
+       "//chrome/browser/ui/webui/color_pipeline_internals",
+@@ -652,34 +652,38 @@
+   }
+ }
+ 
+-source_set("onboarding") {
+-  sources = [
+-    "onboarding/onboarding_handler.cc",
+-    "onboarding/onboarding_page_ui.cc",
+-  ]
+-  public = [
+-    "onboarding/onboarding_handler.h",
+-    "onboarding/onboarding_page_ui.h",
+-  ]
+-  public_deps = [
+-    "//chrome/browser/profiles:profile",
+-    "//chrome/common",
+-    "//components/prefs",
+-    "//content/public/browser",
+-    "//extensions/browser",
+-  ]
+-  deps = [
+-    "//base",
+-    "//chrome/browser:browser_process",
+-    "//chrome/browser/extensions",
+-    "//chrome/browser/profiles",
+-    "//chrome/browser/ui/webui/settings",
+-    "//components/helium_onboarding:generated_resources",
+-    "//components/helium_onboarding:localized_strings",
+-    "//components/helium_services",
+-    "//extensions/common",
+-    "//ui/webui",
+-  ]
++# The onboarding page installs extensions and reuses desktop settings
++# handlers, neither of which exists on Android.
++if (!is_android) {
++  source_set("onboarding") {
++    sources = [
++      "onboarding/onboarding_handler.cc",
++      "onboarding/onboarding_page_ui.cc",
++    ]
++    public = [
++      "onboarding/onboarding_handler.h",
++      "onboarding/onboarding_page_ui.h",
++    ]
++    public_deps = [
++      "//chrome/browser/profiles:profile",
++      "//chrome/common",
++      "//components/prefs",
++      "//content/public/browser",
++      "//extensions/browser",
++    ]
++    deps = [
++      "//base",
++      "//chrome/browser:browser_process",
++      "//chrome/browser/extensions",
++      "//chrome/browser/profiles",
++      "//chrome/browser/ui/webui/settings",
++      "//components/helium_onboarding:generated_resources",
++      "//components/helium_onboarding:localized_strings",
++      "//components/helium_services",
++      "//extensions/common",
++      "//ui/webui",
++    ]
++  }
+ }
+ 
+ if (enable_extensions_core) {
+--- a/chrome/browser/ui/webui/chrome_web_ui_configs.cc
++++ b/chrome/browser/ui/webui/chrome_web_ui_configs.cc
+@@ -47,7 +47,6 @@
+ #include "chrome/browser/ui/webui/notebooks_internals/notebooks_internals_ui_config.h"
+ #include "chrome/browser/ui/webui/ntp_tiles_internals_ui.h"
+ #include "chrome/browser/ui/webui/omnibox/omnibox_ui.h"
+-#include "chrome/browser/ui/webui/onboarding/onboarding_page_ui.h"
+ #include "chrome/browser/ui/webui/policy/policy_ui.h"
+ #include "chrome/browser/ui/webui/predictors/predictors_ui.h"
+ #include "chrome/browser/ui/webui/regional_capabilities_internals/regional_capabilities_internals_ui.h"
+@@ -217,6 +216,7 @@
+ #if !BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)
+ #include "chrome/browser/ui/webui/default_browser/default_browser_modal_ui.h"
+ #include "chrome/browser/ui/webui/intro/intro_ui.h"
++#include "chrome/browser/ui/webui/onboarding/onboarding_page_ui.h"
+ #include "chrome/browser/ui/webui/signin/managed_user_profile_notice_ui.h"
+ #include "chrome/browser/ui/webui/signin/profile_customization_ui.h"
+ #include "chrome/browser/ui/webui/signin/profile_picker_ui.h"
