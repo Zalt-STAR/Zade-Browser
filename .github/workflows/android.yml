@@ -21,6 +21,11 @@ concurrency:
 
 jobs:
   shards:
+    # Off while the pooled compiler cache from run 5 is warm: every object is
+    # already cached, so the shards would only replay it. Turn this back on
+    # (delete the next line) after anything that invalidates the cache, such as
+    # a new Chromium version or changed compiler flags.
+    if: false
     strategy:
       fail-fast: false
       matrix:

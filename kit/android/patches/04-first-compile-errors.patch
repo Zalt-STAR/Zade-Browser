@@ -1,0 +1,223 @@
+# First compile errors on Android (apply after 03).
+#
+# CI run 5 compiled all 44,510 object files the APK needs except 13. Each fix
+# below addresses one of them: desktop-only declarations used by shared code,
+# Android callers of Safe Browsing and RLZ code that Helium compiles out, and
+# two call sites that missed a new function parameter.
+# Applies to Chromium 155.0.8059.39 with Helium 0.19.2.1; verified by CI.
+--- a/chrome/browser/android/locale/locale_template_url_loader.cc
++++ b/chrome/browser/android/locale/locale_template_url_loader.cc
+@@ -18,6 +18,10 @@
+ // Must come after all headers that specialize FromJniType() / ToJniType().
+ #include "chrome/browser/locale/jni_headers/LocaleTemplateUrlLoader_jni.h"
+ 
++// Google's ID in the prepopulated engine list. Helium's engine data does not
++// expose it as TemplateURLPrepopulateData::google, which this file relied on.
++constexpr int kGooglePrepopulateId = 1;
++
+ static int64_t JNI_LocaleTemplateUrlLoader_Init(const std::string& locale,
+                                                 Profile* profile) {
+   return reinterpret_cast<intptr_t>(new LocaleTemplateUrlLoader(
+@@ -74,12 +78,12 @@
+         template_url_service_->GetTemplateURLForKeyword(data_url->keyword());
+     bool exists = matching_url != nullptr;
+     if (!exists &&
+-        data_url->prepopulate_id == TemplateURLPrepopulateData::google.id) {
++        data_url->prepopulate_id == kGooglePrepopulateId) {
+       auto existing_urls = template_url_service_->GetTemplateURLs();
+ 
+       for (TemplateURL* existing_url : existing_urls) {
+         if (existing_url->prepopulate_id() ==
+-            TemplateURLPrepopulateData::google.id) {
++            kGooglePrepopulateId) {
+           matching_url = existing_url;
+           exists = true;
+           break;
+@@ -130,7 +134,7 @@
+   const TemplateURL* current_dsp =
+       template_url_service_->GetDefaultSearchProvider();
+   if (!current_dsp ||
+-      current_dsp->prepopulate_id() != TemplateURLPrepopulateData::google.id) {
++      current_dsp->prepopulate_id() != kGooglePrepopulateId) {
+     return;
+   }
+ 
+@@ -159,7 +163,7 @@
+ 
+   TemplateURL* turl =
+       FindURLByPrepopulateID(template_url_service_->GetTemplateURLs(),
+-                             TemplateURLPrepopulateData::google.id);
++                             kGooglePrepopulateId);
+   if (turl) {
+     template_url_service_->SetUserSelectedDefaultSearchProvider(turl);
+   }
+--- a/chrome/browser/android/rlz/rlz_ping_handler.cc
++++ b/chrome/browser/android/rlz/rlz_ping_handler.cc
+@@ -35,6 +35,9 @@
+ 
+ namespace {
+ const char kProtocolCgiVariable[] = "rep";
++// Helium removes the RLZ ping server. Ping() below reports failure before it
++// builds a request; this placeholder only keeps the rest of it compiling.
++const char kNoRlzServer[] = "rlz.invalid";
+ }
+ 
+ namespace chrome {
+@@ -53,8 +56,10 @@
+                           const std::string& events,
+                           const std::string& id,
+                           base::OnceCallback<void(bool)> callback) {
+-  if (brand.empty() || language.empty() || events.empty() || id.empty() ||
+-      !callback) {
++  // RLZ pings report usage to Google; this build never sends them.
++  const bool rlz_pings_disabled = true;
++  if (rlz_pings_disabled || brand.empty() || language.empty() ||
++      events.empty() || id.empty() || !callback) {
+     if (callback) {
+       std::move(callback).Run(false);
+     }
+@@ -69,7 +74,7 @@
+   DCHECK_EQ(id.length(), 50u);
+ 
+   GURL request_url(base::StringPrintf(
+-      "https://%s%s?", rlz_lib::kFinancialServer, rlz_lib::kFinancialPingPath));
++      "https://%s%s?", kNoRlzServer, rlz_lib::kFinancialPingPath));
+   request_url = net::AppendQueryParameter(
+       request_url, rlz_lib::kProductSignatureCgiVariable, "chrome");
+   request_url =
+--- a/chrome/browser/download/chrome_download_manager_delegate.cc
++++ b/chrome/browser/download/chrome_download_manager_delegate.cc
+@@ -1186,7 +1186,9 @@
+ 
+ bool ChromeDownloadManagerDelegate::ShouldObfuscateDownload(
+     download::DownloadItem* item) {
+-#if BUILDFLAG(ENTERPRISE_CONTENT_ANALYSIS) || BUILDFLAG(IS_ANDROID)
++// Needs Safe Browsing's deep scanning, which this build compiles out.
++#if (BUILDFLAG(ENTERPRISE_CONTENT_ANALYSIS) || BUILDFLAG(IS_ANDROID)) && \
++    BUILDFLAG(SAFE_BROWSING_AVAILABLE)
+   if (!base::FeatureList::IsEnabled(
+           enterprise_obfuscation::kEnterpriseFileObfuscation)) {
+     return false;
+--- a/chrome/browser/download/download_ui_safe_browsing_util.cc
++++ b/chrome/browser/download/download_ui_safe_browsing_util.cc
+@@ -4,6 +4,7 @@
+ 
+ #include "chrome/browser/download/download_ui_safe_browsing_util.h"
+ 
++#include "base/files/file_path.h"
+ #include "base/metrics/histogram_functions.h"
+ #include "base/strings/stringprintf.h"
+ #include "chrome/browser/profiles/profile.h"
+--- a/chrome/browser/interstitials/enterprise_util.cc
++++ b/chrome/browser/interstitials/enterprise_util.cc
+@@ -11,6 +11,7 @@
+ #include "components/prefs/pref_service.h"
+ #include "components/safe_browsing/content/browser/safe_browsing_navigation_observer_manager.h"
+ #include "components/safe_browsing/core/common/features.h"
++#include "components/safe_browsing/core/common/safe_browsing_prefs.h"
+ #include "components/sessions/content/session_tab_helper.h"
+ #include "components/sessions/core/session_id.h"
+ #include "content/public/browser/web_contents.h"
+--- a/chrome/browser/notifications/persistent_notification_handler.cc
++++ b/chrome/browser/notifications/persistent_notification_handler.cc
+@@ -393,7 +393,7 @@
+     const GURL& url,
+     const std::string& notification_id,
+     Profile* profile) {
+-#if BUILDFLAG(IS_ANDROID)
++#if BUILDFLAG(IS_ANDROID) && BUILDFLAG(SAFE_BROWSING_AVAILABLE)
+   safe_browsing::NotificationContentDetectionUkmUtil::
+       RecordSuspiciousNotificationInteractionUkm(
+           static_cast<int>(
+--- a/chrome/browser/profiles/profile_avatar_icon_util.cc
++++ b/chrome/browser/profiles/profile_avatar_icon_util.cc
+@@ -1053,7 +1053,12 @@
+       features::IsRoundedIconsEnabled() ? kFileSaveIcon : kSavePageOldIcon);
+   return GetAvatarIconAndLabelDict(
+       webui::GetBitmapDataUrl(icon.AsBitmap()),
+-      l10n_util::GetStringUTF16(IDS_SETTINGS_CHOOSE_CUSTOM_AVATAR_FILE), index,
++#if BUILDFLAG(IS_ANDROID)
++      std::u16string(),
++#else
++      l10n_util::GetStringUTF16(IDS_SETTINGS_CHOOSE_CUSTOM_AVATAR_FILE),
++#endif
++      index,
+       false, /*is_gaia_avatar=*/false, /*is_custom_avatar=*/true,
+       /*is_placeholder=*/true);
+ }
+--- a/chrome/common/webui_url_constants.h
++++ b/chrome/common/webui_url_constants.h
+@@ -513,14 +513,17 @@
+ inline constexpr char kChromeUIProfilePickerOmniboxEverywhereQuery[] =
+     "omnibox-everywhere";
+ inline constexpr char kChromeUIProfilePickerUrl[] = "chrome://profile-picker/";
+-inline constexpr char kHeliumSetupHost[] = "setup";
+-inline constexpr char kHeliumSetupURL[] = "chrome://setup";
+ inline constexpr char kChromeUIHistorySyncOptinHost[] = "history-sync-optin";
+ inline constexpr char kChromeUIHistorySyncOptinURL[] =
+     "chrome://history-sync-optin/";
+ inline constexpr char kChromeUIUpdaterHost[] = "updater";
+ #endif
+ 
++// The setup page is desktop-only, but shared code checks for its host on
++// every platform, so the names have to exist everywhere.
++inline constexpr char kHeliumSetupHost[] = "setup";
++inline constexpr char kHeliumSetupURL[] = "chrome://setup";
++
+ #if BUILDFLAG(ENABLE_PRINT_PREVIEW)
+ inline constexpr char kChromeUIPrintHost[] = "print";
+ #endif
+--- a/components/enterprise/connectors/core/cloud_content_scanning/cloud_binary_upload_service_base.cc
++++ b/components/enterprise/connectors/core/cloud_content_scanning/cloud_binary_upload_service_base.cc
+@@ -21,6 +21,7 @@
+ 
+ #if !BUILDFLAG(IS_IOS)
+ #include "components/safe_browsing/content/browser/web_ui/web_ui_content_info_singleton.h"
++#include "components/safe_browsing/buildflags.h"
+ #endif
+ 
+ namespace enterprise_connectors {
+@@ -362,7 +363,7 @@
+     ScanRequestUploadResult result,
+     BinaryUploadRequest* request,
+     const ContentAnalysisResponse& response) {
+-#if !BUILDFLAG(IS_IOS)
++#if !BUILDFLAG(IS_IOS) && BUILDFLAG(SAFE_BROWSING_DOWNLOAD_PROTECTION)
+   safe_browsing::WebUIContentInfoSingleton::GetInstance()
+       ->AddToDeepScanRequests(request->per_profile_request(),
+                               request->access_token(), upload_info,
+--- a/components/policy/core/common/helium_opinionated_policy_provider.cc
++++ b/components/policy/core/common/helium_opinionated_policy_provider.cc
+@@ -25,8 +25,10 @@
+   // Disable the password manager
+   Set(policy_map, policy::key::kPasswordManagerEnabled,
+       POLICY_LEVEL_MANDATORY, base::Value(false));
++#if !BUILDFLAG(IS_ANDROID)
+   Set(policy_map, policy::key::kPasswordManagerPasskeysEnabled,
+       POLICY_LEVEL_MANDATORY, base::Value(false));
++#endif
+ 
+   UpdatePolicy(std::move(bundle));
+ }
+--- a/components/search_engines/android/template_url_service_android.cc
++++ b/components/search_engines/android/template_url_service_android.cc
+@@ -450,7 +450,8 @@
+     if (regulatory_api_turl->safe_for_autoreplace()) {
+       template_url_service_->ResetTemplateURL(
+           regulatory_api_turl, regulatory_api_turl->short_name(),
+-          regulatory_api_turl->keyword(), regulatory_api_turl->url());
++          regulatory_api_turl->keyword(), regulatory_api_turl->url(),
++          regulatory_api_turl->suggestions_url());
+     }
+   }
+ 
+@@ -505,7 +506,8 @@
+   }
+ 
+   template_url_service_->ResetTemplateURL(template_url, short_name, new_keyword,
+-                                          search_url);
++                                          search_url,
++                                          template_url->suggestions_url());
+   return true;
+ }
+ 
