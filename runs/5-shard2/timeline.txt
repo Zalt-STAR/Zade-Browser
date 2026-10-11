@@ -1,0 +1,11 @@
+fork rc=0 seconds=6 disk_free=104G
+fetch rc=0 seconds=599 disk_free=65G
+deps rc=0 seconds=145 disk_free=64G
+hooks rc=0 seconds=24 disk_free=62G
+helium rc=0 seconds=75 disk_free=61G
+brand rc=0 seconds=1 disk_free=61G
+gn rc=0 seconds=15 disk_free=60G
+shardlist rc=0 seconds=18 disk_free=60G
+compile budget: 303 minutes (clang llvmorg-24-init-7747-g62397f8b-27)
+build rc=1 seconds=4876 disk_free=56G
+cache delta: 4090 files, 173M
