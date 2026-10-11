@@ -1,0 +1,58 @@
+Cache directory:                          /home/runner/ccache
+Config file:                              /home/runner/ccache/ccache.conf
+System config file:                       /etc/ccache.conf
+Stats updated:                            Sun Oct 11 10:01:05 2026
+Stats zeroed:                             Sun Oct 11 09:03:15 2026
+Cacheable calls:                          11081 / 11084 (99.97%)
+  Hits:                                    9038 / 11081 (81.56%)
+    Direct:                                9038 /  9038 (100.0%)
+    Preprocessed:                             0 /  9038 ( 0.00%)
+  Misses:                                  2043 / 11081 (18.44%)
+Uncacheable calls:                            1 / 11084 ( 0.01%)
+  Autoconf compile/link:                      0 /     1 ( 0.00%)
+  Bad compiler arguments:                     0 /     1 ( 0.00%)
+  Called for linking:                         0 /     1 ( 0.00%)
+  Called for preprocessing:                   0 /     1 ( 0.00%)
+  Ccache disabled:                            0 /     1 ( 0.00%)
+  Compilation failed:                         1 /     1 (100.0%)
+  Compiler output file missing:               0 /     1 ( 0.00%)
+  Compiler produced empty output:             0 /     1 ( 0.00%)
+  Compiler produced stdout:                   0 /     1 ( 0.00%)
+  Could not use modules:                      0 /     1 ( 0.00%)
+  Could not use precompiled header:           0 /     1 ( 0.00%)
+  Forced recache:                             0 /     1 ( 0.00%)
+  Multiple source files:                      0 /     1 ( 0.00%)
+  No input file:                              0 /     1 ( 0.00%)
+  Output to stdout:                           0 /     1 ( 0.00%)
+  Preprocessing failed:                       0 /     1 ( 0.00%)
+  Unsupported code directive:                 0 /     1 ( 0.00%)
+  Unsupported compiler option:                0 /     1 ( 0.00%)
+  Unsupported environment variable:           0 /     1 ( 0.00%)
+  Unsupported source language:                0 /     1 ( 0.00%)
+Errors:                                       2 / 11084 ( 0.02%)
+  Compiler check failed:                      0 /     2 ( 0.00%)
+  Could not find compiler:                    0 /     2 ( 0.00%)
+  Could not read or parse input file:         2 /     2 (100.0%)
+  Could not write to output file:             0 /     2 ( 0.00%)
+  Error hashing extra file:                   0 /     2 ( 0.00%)
+  Input file modified during compilation:     0 /     2 ( 0.00%)
+  Internal error:                             0 /     2 ( 0.00%)
+  Missing cache file:                         0 /     2 ( 0.00%)
+Successful lookups:
+  Direct:                                  9038 / 11084 (81.54%)
+  Preprocessed:                               0 /  2044 ( 0.00%)
+Local storage:
+  Cache size (GB):                          2.0 /   9.0 (22.56%)
+  Files:                                  69070
+  Cleanups:                                   0
+  Hits:                                    9038 / 11081 (81.56%)
+  Misses:                                  2043 / 11081 (18.44%)
+  Reads:                                  22166
+  Writes:                                  4086
+Remote storage:
+  Hits:                                       0
+  Misses:                                     0
+  Reads:                                      0
+  Writes:                                     0
+  Errors:                                     0
+  Timeouts:                                   0
