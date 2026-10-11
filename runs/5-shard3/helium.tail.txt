@@ -1,0 +1,250 @@
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_ca.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_nl.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_hy.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_it.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_fa.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_uz.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_ar.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_sw.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_ru.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_no.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_sr-Latn.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_ne.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_zh-CN.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_am.xtb
+
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_sr.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_af.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_ja.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_az.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_sr.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_lo.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_lo.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_bg.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_es.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_de.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_sv.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_el.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_fil.xtb
+
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_bg.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_my.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_ml.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_fr.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_fa.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_ms.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_ru.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_it.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_kn.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_ky.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_hu.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_pt-PT.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_mr.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_zh-TW.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_vi.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_el.xtb
+Replaced strings in ios/chrome/credential_provider_extension/strings/resources/ios_credential_provider_extension_strings_ro.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_hr.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_sr-Latn.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_ar.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_fi.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_am.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_uz.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_af.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_zh-CN.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_eu.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_uk.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_pl.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_cs.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_kn.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_es-419.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_sw.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_hu.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_az.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_da.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_pt-PT.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_ka.xtb
+Replaced strings in ios/chrome/widget_kit_extension/strings/resources/ios_widget_kit_extension_strings_gu.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_sq.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_ja.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_kn.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_is.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_mn.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_be.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_my.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_pt-PT.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_mn.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_fr.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_bn.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_cy.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_fa.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_sq.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_th.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_it.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_ka.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_zh-TW.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_de.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_iw.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_ro.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_cs.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_th.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_pl.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_hu.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_mk.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_zu.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_ka.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_ms.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_si.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_chromium_strings_hi.xtb
+Replaced strings in ios/chrome/share_extension/strings/resources/ios_share_extension_google_chrome_strings_fr-CA.xtb
+Modified 2248 files
+
+==> applying translations
+af: applied 261 translations to 5 XTB files
+am: applied 261 translations to 5 XTB files
+ar: applied 261 translations to 5 XTB files
+as: applied 261 translations to 5 XTB files
+az: applied 261 translations to 5 XTB files
+be: applied 261 translations to 5 XTB files
+ka: applied 261 translations to 5 XTB files
+kk: applied 261 translations to 5 XTB files
+km: applied 261 translations to 5 XTB files
+kn: applied 261 translations to 5 XTB files
+ko: applied 261 translations to 5 XTB files
+ky: applied 261 translations to 5 XTB files
+ru: applied 261 translations to 5 XTB files
+si: applied 261 translations to 5 XTB files
+sk: applied 261 translations to 5 XTB files
+sl: applied 261 translations to 5 XTB files
+sq: applied 261 translations to 5 XTB files
+sr: applied 261 translations to 5 XTB files
+da: applied 261 translations to 5 XTB files
+de: applied 261 translations to 5 XTB files
+el: applied 261 translations to 5 XTB files
+en-GB: applied 261 translations to 5 XTB files
+es: applied 261 translations to 5 XTB files
+es-419: applied 261 translations to 5 XTB files
+lo: applied 261 translations to 5 XTB files
+lt: applied 261 translations to 5 XTB files
+lv: applied 261 translations to 5 XTB files
+mk: applied 261 translations to 5 XTB files
+ml: applied 261 translations to 5 XTB files
+mn: applied 261 translations to 5 XTB files
+sr-Latn: applied 261 translations to 5 XTB files
+sv: applied 261 translations to 5 XTB files
+sw: applied 261 translations to 5 XTB files
+ta: applied 261 translations to 5 XTB files
+te: applied 261 translations to 5 XTB files
+th: applied 261 translations to 5 XTB files
+bg: applied 261 translations to 5 XTB files
+bn: applied 261 translations to 5 XTB files
+bs: applied 261 translations to 5 XTB files
+ca: applied 261 translations to 5 XTB files
+cs: applied 261 translations to 5 XTB files
+cy: applied 261 translations to 5 XTB files
+hu: applied 261 translations to 5 XTB files
+hy: applied 261 translations to 5 XTB files
+id: applied 261 translations to 5 XTB files
+is: applied 261 translations to 5 XTB files
+it: applied 261 translations to 5 XTB files
+ja: applied 261 translations to 5 XTB files
+or: applied 261 translations to 5 XTB files
+pa: applied 261 translations to 5 XTB files
+pl: applied 261 translations to 5 XTB files
+pt-BR: applied 261 translations to 5 XTB files
+pt-PT: applied 261 translations to 5 XTB files
+ro: applied 261 translations to 5 XTB files
+zh-HK: applied 261 translations to 5 XTB files
+zh-TW: applied 261 translations to 5 XTB files
+zu: applied 261 translations to 5 XTB files
+et: applied 261 translations to 5 XTB files
+eu: applied 261 translations to 5 XTB files
+fa: applied 261 translations to 5 XTB files
+fi: applied 261 translations to 5 XTB files
+fil: applied 261 translations to 5 XTB files
+fr: applied 261 translations to 5 XTB files
+fr-CA: applied 261 translations to 5 XTB files
+gl: applied 261 translations to 5 XTB files
+gu: applied 261 translations to 5 XTB files
+he: applied 261 translations to 5 XTB files
+hi: applied 261 translations to 5 XTB files
+hr: applied 261 translations to 5 XTB files
+mr: applied 261 translations to 5 XTB files
+ms: applied 261 translations to 5 XTB files
+my: applied 261 translations to 5 XTB files
+nb: applied 261 translations to 5 XTB files
+ne: applied 261 translations to 5 XTB files
+nl: applied 261 translations to 5 XTB files
+tr: applied 261 translations to 5 XTB files
+uk: applied 261 translations to 5 XTB files
+ur: applied 261 translations to 5 XTB files
+uz: applied 261 translations to 5 XTB files
+vi: applied 261 translations to 5 XTB files
+zh-CN: applied 261 translations to 5 XTB files
+
+==> setting the version
+
+==> installing shared branding resources
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/256x256.png (size 256x256)
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/128x128.png (size 128x128)
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/64x64.png (size 64x64)
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/48x48.png (size 48x48)
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/32x32.png (size 32x32)
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/24x24.png (size 24x24)
+Created /home/runner/build/zade-linux/helium-chromium/resources/generated/product_icon/16x16.png (size 16x16)
+Copied favicons/favicon_bookmarks_16.png to chrome/app/theme/default_100_percent/common/favicon_bookmarks.png
+Copied favicons/favicon_conflicts_16.png to chrome/app/theme/default_100_percent/common/favicon_conflicts.png
+Copied favicons/favicon_downloads_16.png to chrome/app/theme/default_100_percent/common/favicon_downloads.png
+Copied favicons/favicon_management_16.png to chrome/app/theme/default_100_percent/common/favicon_management.png
+Copied favicons/favicon_ntp_16.png to chrome/app/theme/default_100_percent/common/favicon_ntp.png
+Copied favicons/favicon_plugins_16.png to chrome/app/theme/default_100_percent/common/favicon_plugins.png
+Copied favicons/favicon_settings_16.png to chrome/app/theme/default_100_percent/common/favicon_settings.png
+Copied favicons/favicon_bookmarks_32.png to chrome/app/theme/default_200_percent/common/favicon_bookmarks.png
+Copied favicons/favicon_conflicts_32.png to chrome/app/theme/default_200_percent/common/favicon_conflicts.png
+Copied favicons/favicon_downloads_32.png to chrome/app/theme/default_200_percent/common/favicon_downloads.png
+Copied favicons/favicon_management_32.png to chrome/app/theme/default_200_percent/common/favicon_management.png
+Copied favicons/favicon_ntp_32.png to chrome/app/theme/default_200_percent/common/favicon_ntp.png
+Copied favicons/favicon_plugins_32.png to chrome/app/theme/default_200_percent/common/favicon_plugins.png
+Copied favicons/favicon_settings_32.png to chrome/app/theme/default_200_percent/common/favicon_settings.png
+Copied favicons/favicon_flags_16.png to components/resources/default_100_percent/flags_ui/favicon_flags.png
+Copied favicons/favicon_flags_32.png to components/resources/default_200_percent/flags_ui/favicon_flags.png
+Copied favicons/favicon_flags_48.png to components/resources/default_300_percent/flags_ui/favicon_flags.png
+Copied favicons/favicon_history_16.png to components/resources/default_100_percent/favicon_history.png
+Copied favicons/favicon_history_32.png to components/resources/default_200_percent/favicon_history.png
+Copied favicons/favicon_history_48.png to components/resources/default_300_percent/favicon_history.png
+Copied favicons/favicon_plugins_16.png to extensions/browser/resources/default_100_percent/favicon_extensions.png
+Copied favicons/favicon_plugins_32.png to extensions/browser/resources/default_200_percent/favicon_extensions.png
+Copied branding/product_logo.png to components/resources/default_100_percent/chromium/product_logo.png
+Copied branding/product_logo_white.png to components/resources/default_100_percent/chromium/product_logo_white.png
+Copied branding/product_logo_200.png to components/resources/default_200_percent/chromium/product_logo.png
+Copied branding/product_logo_white_200.png to components/resources/default_200_percent/chromium/product_logo_white.png
+Copied branding/product_logo_22_mono.png to chrome/app/theme/chromium/product_logo_22_mono.png
+Copied branding/product_logo.svg to chrome/app/theme/chromium/product_logo.svg
+Copied branding/product_logo.icon to chrome/app/vector_icons/browser_logo.icon
+Copied branding/product_logo.icon to chrome/app/vector_icons/browser_logo_old.icon
+Copied branding/product_logo.icon to chrome/app/vector_icons/chrome_product.icon
+Copied branding/product_logo.icon to components/omnibox/browser/vector_icons/chrome_product.icon
+Copied branding/product_logo.icon to components/omnibox/browser/vector_icons/product_chrome_refresh.icon
+Copied branding/product_logo.icon to components/omnibox/browser/vector_icons/product_chrome_refresh_old.icon
+Copied branding/product_logo.icon to components/omnibox/browser/vector_icons/product_old.icon
+Copied branding/product_logo.icon to components/vector_icons/chromium/product.icon
+Copied branding/product_logo_color.icon to components/vector_icons/chromium/product_refresh.icon
+Copied branding/product_logo.icon to ui/message_center/vector_icons/chrome_product.icon
+Copied branding/product_logo.icon to ui/message_center/vector_icons/product_old.icon
+Copied generated/product_icon/16x16.png to chrome/app/theme/chromium/product_logo_16.png
+Copied generated/product_icon/24x24.png to chrome/app/theme/chromium/product_logo_24.png
+Copied generated/product_icon/48x48.png to chrome/app/theme/chromium/product_logo_48.png
+Copied generated/product_icon/64x64.png to chrome/app/theme/chromium/product_logo_64.png
+Copied generated/product_icon/128x128.png to chrome/app/theme/chromium/product_logo_128.png
+Copied generated/product_icon/256x256.png to chrome/app/theme/chromium/product_logo_256.png
+Copied generated/product_icon/16x16.png to chrome/app/theme/default_100_percent/chromium/product_logo_16.png
+Copied generated/product_icon/32x32.png to chrome/app/theme/default_100_percent/chromium/product_logo_32.png
+Copied generated/product_icon/32x32.png to chrome/app/theme/default_200_percent/chromium/product_logo_16.png
+Copied generated/product_icon/64x64.png to chrome/app/theme/default_200_percent/chromium/product_logo_32.png
+Copied generated/product_icon/24x24.png to chrome/app/theme/chromium/linux/product_logo_24.png
+Copied generated/product_icon/48x48.png to chrome/app/theme/chromium/linux/product_logo_48.png
+Copied generated/product_icon/64x64.png to chrome/app/theme/chromium/linux/product_logo_64.png
+Copied generated/product_icon/128x128.png to chrome/app/theme/chromium/linux/product_logo_128.png
+Copied generated/product_icon/256x256.png to chrome/app/theme/chromium/linux/product_logo_256.png
+Copied generated/product_icon/16x16.png to chrome/app/theme/default_100_percent/chromium/linux/product_logo_16.png
+Copied generated/product_icon/32x32.png to chrome/app/theme/default_100_percent/chromium/linux/product_logo_32.png
