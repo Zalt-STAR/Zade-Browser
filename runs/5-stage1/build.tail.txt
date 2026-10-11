@@ -1,0 +1,250 @@
+[58628/60887] 1h19m29.56s F ACTION //chrome/browser/thumbnail/generator:java__dex(//build/toolchain/android:android_clang_arm64)
+[58629/60886] 1h19m30.40s F ACTION //chrome/browser/tabmodel/internal:java__dex(//build/toolchain/android:android_clang_arm64)
+[58630/60885] 1h19m30.82s F ACTION //chrome/browser/locale:java__dex(//build/toolchain/android:android_clang_arm64)
+[58631/60884] 1h19m31.54s F ACTION //chrome/browser/ui/android/toolbar:variation_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58632/60883] 1h19m32.50s F ACTION //services/on_device_model/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58633/60882] 1h19m32.92s F ACTION //base/version_info/android:version_constants_bridge_jni_java__dex(//build/toolchain/android:android_clang_arm64)
+[58634/60879] 1h19m33.00s F ACTION //components/download/public/common:public_java__dex(//build/toolchain/android:android_clang_arm64)
+[58635/60878] 1h19m34.22s F ACTION //chrome/browser/page_image_service/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58636/60877] 1h19m35.11s F ACTION //chrome/browser/mandatory_reauth/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58637/60876] 1h19m35.48s F ACTION //components/installedapp/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58638/60875] 1h19m35.81s F ACTION //chrome/browser/glic/android:menu_java__dex(//build/toolchain/android:android_clang_arm64)
+[58639/60874] 1h19m37.56s F ACTION //ui/gfx/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58640/60873] 1h19m38.28s F ACTION //base:tristate_java__dex(//build/toolchain/android:android_clang_arm64)
+[58641/60871] 1h19m38.62s F ACTION //ui/accessibility/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58642/60870] 1h19m39.26s F ACTION //third_party/blink/public/mojom/tokens:tokens_java__dex(//build/toolchain/android:android_clang_arm64)
+[58643/60869] 1h19m41.60s F ACTION //chrome/browser/feedback/android:internal_java__dex(//build/toolchain/android:android_clang_arm64)
+[58644/60868] 1h19m41.68s F ACTION //components/browser_ui/desktop_windowing/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58645/60867] 1h19m42.15s F ACTION //components/browser_ui/bottomsheet/android/internal:java__dex(//build/toolchain/android:android_clang_arm64)
+[58646/60866] 1h19m42.26s F ACTION //net/android:net_thread_stats_uid_java__dex(//build/toolchain/android:android_clang_arm64)
+[58647/60864] 1h19m45.60s F ACTION //components/content_settings/android:content_settings_enums_java__dex(//build/toolchain/android:android_clang_arm64)
+[58648/60863] 1h19m45.74s F ACTION //chrome/browser/ui/android/edge_to_edge/internal:java__dex(//build/toolchain/android:android_clang_arm64)
+[58649/60862] 1h19m45.84s F ACTION //third_party/androidx:androidx_lifecycle_lifecycle_runtime_compose_android_java__classes__dex(//build/toolchain/android:android_clang_arm64)
+[58650/60850] 1h19m45.97s F ACTION //chrome/browser/password_manager/android/pwm_disabled:java__dex(//build/toolchain/android:android_clang_arm64)
+[58651/60849] 1h19m48.77s F ACTION //components/embedder_support/android:application_java__dex(//build/toolchain/android:android_clang_arm64)
+[58652/60848] 1h19m48.84s F ACTION //third_party/androidx:core_overrides_java__dex(//build/toolchain/android:android_clang_arm64)
+[58653/60783] 1h19m48.88s F ACTION //base:log_java__dex(//build/toolchain/android:android_clang_arm64)
+[58654/60757] 1h19m49.88s F ACTION //third_party/androidx:androidx_xr_arcore_arcore_java__classes__dex(//build/toolchain/android:android_clang_arm64)
+[58655/60746] 1h19m51.17s F ACTION //components/permissions/android:core_java__dex(//build/toolchain/android:android_clang_arm64)
+[58656/60745] 1h19m51.31s F ACTION //chrome/browser/android/customtabs:java__dex(//build/toolchain/android:android_clang_arm64)
+[58657/60744] 1h19m51.43s F ACTION //base:ui_java__dex(//build/toolchain/android:android_clang_arm64)
+[58658/60743] 1h19m52.49s F ACTION //chrome/browser/context_sharing/tab_bottom_sheet/public/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58659/60742] 1h19m53.39s F ACTION //components/collaboration/public:core_java__dex(//build/toolchain/android:android_clang_arm64)
+[58660/60741] 1h19m53.92s F ACTION //ui/base/mojom:ui_base_types_java__dex(//build/toolchain/android:android_clang_arm64)
+[58661/60740] 1h19m54.10s F ACTION //services/device/generic_sensor:java__dex(//build/toolchain/android:android_clang_arm64)
+[58662/60739] 1h19m56.28s F ACTION //services/device/public/mojom:generic_sensor_java__dex(//build/toolchain/android:android_clang_arm64)
+[58663/60738] 1h19m56.69s F ACTION //components/saved_tab_groups/internal:java__dex(//build/toolchain/android:android_clang_arm64)
+[58664/60737] 1h19m57.23s F ACTION //components/contextual_search:components_contextual_search_java__dex(//build/toolchain/android:android_clang_arm64)
+[58665/60736] 1h19m57.27s F ACTION //chrome/browser/safe_browsing/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58666/60735] 1h19m59.21s F ACTION //chrome/browser/hub:java__dex(//build/toolchain/android:android_clang_arm64)
+[58667/60734] 1h19m59.47s F ACTION //third_party/androidx:androidx_xr_runtime_runtime_openxr_java__classes__dex(//build/toolchain/android:android_clang_arm64)
+[58668/60731] 1h19m59.87s F ACTION //gpu/ipc/common:surface_handle_java__dex(//build/toolchain/android:android_clang_arm64)
+[58669/60730] 1h20m00.92s F ACTION //chrome/browser/language/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58670/60729] 1h20m01.81s F ACTION //chrome/browser/segmentation_platform:factory_java__dex(//build/toolchain/android:android_clang_arm64)
+[58671/60728] 1h20m02.67s F ACTION //skia/public/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58672/60727] 1h20m03.32s F ACTION //chrome/browser/ui/android/google_bottom_bar:java__dex(//build/toolchain/android:android_clang_arm64)
+[58673/60726] 1h20m03.58s F ACTION //ui/events/mojom:event_latency_metadata_mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58674/60725] 1h20m04.86s F ACTION //base:task_executor_java__dex(//build/toolchain/android:android_clang_arm64)
+[58675/60723] 1h20m05.42s F ACTION //components/browser_ui/client_certificate/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58676/60722] 1h20m05.79s F ACTION //chrome/browser/page_content_annotations:factory_java__dex(//build/toolchain/android:android_clang_arm64)
+[58677/60721] 1h20m06.68s F ACTION //components/browser_ui/webshare/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58678/60720] 1h20m07.66s F ACTION //chrome/browser/ui/android/pdf:pdf_page_java__dex(//build/toolchain/android:android_clang_arm64)
+[58679/60719] 1h20m09.36s F ACTION //chrome/browser/ui/android/toolbar:optional_button_java__dex(//build/toolchain/android:android_clang_arm64)
+[58680/60718] 1h20m09.36s F ACTION //third_party/blink/public/mojom:credentialmanagement_mojo_bindings_java__dex(//build/toolchain/android:android_clang_arm64)
+[58681/60717] 1h20m09.44s F ACTION //chrome/browser/commerce/price_tracking/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58682/60716] 1h20m10.22s F ACTION //chrome/browser/version:java__dex(//build/toolchain/android:android_clang_arm64)
+[58683/60714] 1h20m11.67s F ACTION //chrome/browser/consent_auditor/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58684/60713] 1h20m12.06s F ACTION //chrome/browser/selection/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58685/60712] 1h20m12.34s F ACTION //components/safe_browsing/android:safe_browsing_java__dex(//build/toolchain/android:android_clang_arm64)
+[58686/60711] 1h20m12.72s F ACTION //chrome/android:new_tab_page_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58687/60710] 1h20m14.23s F ACTION //ui/base/ime/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58688/60709] 1h20m14.38s F ACTION //chrome/browser/ui/android/extensions/windowing/stub:java__dex(//build/toolchain/android:android_clang_arm64)
+[58689/60708] 1h20m14.93s F ACTION //components/page_info/android:page_info_action_enum_java__dex(//build/toolchain/android:android_clang_arm64)
+[58690/60706] 1h20m15.25s F ACTION //components/embedder_support/android:util_java__dex(//build/toolchain/android:android_clang_arm64)
+[58691/60705] 1h20m17.10s F ACTION //ui/edge_to_edge:java__dex(//build/toolchain/android:android_clang_arm64)
+[58692/60704] 1h20m17.13s F ACTION //third_party/androidx:androidx_test_espresso_espresso_idling_resource_java__classes__dex(//build/toolchain/android:android_clang_arm64)
+[58693/60696] 1h20m17.64s F ACTION //base:unowned_user_data_java__dex(//build/toolchain/android:android_clang_arm64)
+[58694/60694] 1h20m18.18s F ACTION //chrome/browser/ui/vertical_tabs:java__dex(//build/toolchain/android:android_clang_arm64)
+[58695/60693] 1h20m19.18s F ACTION //ui/accessibility:ax_constants_mojo_java__dex(//build/toolchain/android:android_clang_arm64)
+[58696/60692] 1h20m20.06s F ACTION //chrome/browser/xsurface_provider:java__dex(//build/toolchain/android:android_clang_arm64)
+[58697/60690] 1h20m20.21s F ACTION //components/crash/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58698/60689] 1h20m20.51s F ACTION //ui/native_theme:os_settings_provider_android_bridge_java__dex(//build/toolchain/android:android_clang_arm64)
+[58699/60688] 1h20m23.06s F ACTION //services/network/public/mojom:mojom_schemeful_site_java__dex(//build/toolchain/android:android_clang_arm64)
+[58700/60687] 1h20m23.19s F ACTION //base:token_java__dex(//build/toolchain/android:android_clang_arm64)
+[58701/60685] 1h20m23.55s F ACTION //chrome/browser/contextual_tasks:java__dex(//build/toolchain/android:android_clang_arm64)
+[58702/60684] 1h20m26.12s F ACTION //components/content_capture/android/proto:proto_java__dex(//build/toolchain/android:android_clang_arm64)
+[58703/60682] 1h20m26.58s F ACTION //components/gcm_driver/instance_id/android:instance_id_driver_java__dex(//build/toolchain/android:android_clang_arm64)
+[58704/60681] 1h20m26.61s F ACTION //chrome/browser:unexpire_flags_gen(//build/toolchain/android:android_clang_arm64)
+[58705/60678] 1h20m26.61s S CXX obj/chrome/chrome_android_core/chrome_main_delegate_android.o
+[58705/60678] 1h20m26.61s S CXX obj/chrome/chrome_android_core/chrome_jni_onload.o
+[58705/60678] 1h20m26.61s S CXX obj/chrome/browser/core/after_startup_task_utils.o
+[58705/60677] 1h20m26.61s S CXX obj/chrome/browser/unexpire_flags/unexpire_flags_gen.o
+[58705/60677] 1h20m26.61s S CXX obj/chrome/browser/core/about_flags.o
+[58705/60677] 1h20m26.62s S CXX obj/chrome/browser/core/chrome_crash_reporter_client.o
+[58705/60677] 1h20m26.62s S CXX obj/chrome/browser/core/shutdown_signal_handlers_posix.o
+[58705/60677] 1h20m26.62s S CXX obj/chrome/browser/core/vr_ui_host_impl.o
+[58705/60677] 1h20m26.63s S CXX obj/chrome/chrome_android_core/chrome_main_delegate.o
+[58705/60677] 1h20m26.63s S CXX obj/chrome/browser/core/chrome_xr_integration_client.o
+[58705/60677] 1h20m26.63s S CXX obj/chrome/browser/core/shell_integration_android.o
+[58705/60677] 1h20m26.63s S CXX obj/chrome/browser/core/platform_util_android.o
+[58705/60677] 1h20m26.63s S CXX obj/chrome/browser/core/memory_details_android.o
+[58705/60677] 1h20m26.64s S CXX obj/chrome/android/libchrome/chrome_entry_point.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/net_benchmarking.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/chrome_resource_bundle_helper.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/intranet_redirect_detector.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/icon_manager.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/helium_noise_settings.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/global_features.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/font_family_cache.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/file_select_helper.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/incognito_utils_android.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/icon_loader_android.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/composeplate_utils.o
+[58705/60677] 1h20m26.69s F CXX obj/chrome/browser/unexpire_flags/unexpire_flags_gen.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/shopping_service_factory_android.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/price_tracking_utils_android.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_content_browser_client_android.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_content_browser_client_navigation_throttles.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_content_browser_client_binder_policies.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_content_browser_client.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_browser_main.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_features.o
+[58705/60677] 1h20m26.66s S CXX obj/chrome/browser/core/chrome_content_browser_client_receiver_bindings.o
+[58705/60677] 1h20m26.67s S CXX obj/chrome/browser/core/chrome_browser_main_android.o
+[58705/60677] 1h20m26.67s S CXX obj/chrome/browser/core/browser_process_platform_part_android.o
+[58706/60676] 1h20m26.70s F CXX obj/chrome/browser/core/after_startup_task_utils.o
+[58705/60677] 1h20m26.67s S CXX obj/chrome/browser/core/after_startup_task_utils_android.o
+[58705/60677] 1h20m26.67s S CXX obj/chrome/browser/core/universal_web_contents_observers.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/chrome_browser_field_trials.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/browser_process_impl.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/browser_about_handler.o
+[58705/60677] 1h20m26.67s S CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_android.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/startup_data.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/shell_integration.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/resources_util.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/renderer_preferences_util.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/process_singleton_internal.o
+[58705/60677] 1h20m26.68s S CXX obj/chrome/browser/core/process_resource_usage.o
+[58705/60677] 1h20m26.69s S CXX obj/chrome/browser/core/chrome_browser_interface_binders.o
+[58706/60677] 1h20m26.69s S CXX obj/chrome/browser/core/platform_util_internal.o
+[58705/60677] 1h20m26.69s S CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui.o
+[58705/60677] 1h20m26.65s S CXX obj/chrome/browser/core/memory_details.o
+[58705/60677] 1h20m26.67s S CXX obj/chrome/browser/core/unexpire_flags.o
+[58707/60676] 1h20m26.71s F CXX obj/chrome/browser/core/chrome_crash_reporter_client.o
+[58708/60676] 1h20m26.76s F CXX obj/chrome/browser/core/shutdown_signal_handlers_posix.o
+[58709/60676] 1h20m26.76s F CXX obj/chrome/browser/core/composeplate_utils.o
+[58710/60676] 1h20m26.79s F CXX obj/chrome/browser/core/unexpire_flags.o
+[58711/60676] 1h20m26.82s F CXX obj/chrome/browser/core/after_startup_task_utils_android.o
+[58712/60676] 1h20m26.85s F CXX obj/chrome/chrome_android_core/chrome_main_delegate.o
+[58713/60676] 1h20m26.89s F CXX obj/chrome/browser/core/memory_details.o
+[58714/60676] 1h20m26.89s F CXX obj/chrome/browser/core/platform_util_internal.o
+[58715/60676] 1h20m26.91s F CXX obj/chrome/browser/core/process_resource_usage.o
+[58715/60676] 1h20m26.91s F CXX obj/chrome/browser/core/about_flags.o
+[58717/60676] 1h20m26.94s F CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui.o
+[58718/60676] 1h20m26.95s F CXX obj/chrome/browser/core/process_singleton_internal.o
+[58719/60676] 1h20m26.97s F CXX obj/chrome/browser/core/resources_util.o
+[58720/60676] 1h20m26.98s F CXX obj/chrome/browser/core/renderer_preferences_util.o
+[58721/60676] 1h20m27.04s F CXX obj/chrome/browser/core/shell_integration.o
+[58722/60676] 1h20m27.08s F CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_android.o
+[58723/60676] 1h20m27.08s F CXX obj/chrome/browser/core/startup_data.o
+[58724/60676] 1h20m27.10s F CXX obj/chrome/browser/core/chrome_browser_interface_binders.o
+[58725/60676] 1h20m27.10s F CXX obj/chrome/browser/core/browser_about_handler.o
+[58726/60676] 1h20m27.15s F CXX obj/chrome/browser/core/universal_web_contents_observers.o
+[58727/60676] 1h20m27.16s F CXX obj/chrome/browser/core/chrome_browser_field_trials.o
+[58728/60676] 1h20m27.17s F CXX obj/chrome/browser/core/browser_process_platform_part_android.o
+[58729/60676] 1h20m27.19s F ACTION //chrome/browser/notifications:java__dex(//build/toolchain/android:android_clang_arm64)
+[58730/60675] 1h20m27.21s F CXX obj/chrome/browser/core/chrome_browser_main_android.o
+[58731/60675] 1h20m27.24s F CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_features.o
+[58732/60675] 1h20m27.28s F CXX obj/chrome/browser/core/chrome_content_browser_client_binder_policies.o
+[58733/60675] 1h20m27.30s F CXX obj/chrome/browser/core/chrome_content_browser_client_receiver_bindings.o
+[58734/60675] 1h20m27.30s F CXX obj/chrome/browser/core/browser_process_impl.o
+[58735/60675] 1h20m27.32s F CXX obj/chrome/browser/core/chrome_content_browser_client_android.o
+[58736/60675] 1h20m27.36s F CXX obj/chrome/browser/core/chrome_content_browser_client_navigation_throttles.o
+[58737/60675] 1h20m27.37s F CXX obj/chrome/browser/core/shopping_service_factory_android.o
+[58738/60675] 1h20m27.38s F CXX obj/chrome/browser/core/icon_loader_android.o
+[58739/60675] 1h20m27.39s F CXX obj/chrome/browser/core/chrome_browser_main.o
+[58740/60675] 1h20m27.39s F CXX obj/chrome/browser/core/price_tracking_utils_android.o
+[58741/60675] 1h20m27.45s F CXX obj/chrome/browser/core/incognito_utils_android.o
+[58742/60675] 1h20m27.50s F CXX obj/chrome/browser/core/file_select_helper.o
+[58743/60675] 1h20m27.52s F CXX obj/chrome/browser/core/font_family_cache.o
+[58743/60675] 1h20m27.52s F CXX obj/chrome/chrome_android_core/chrome_jni_onload.o
+[58745/60675] 1h20m27.53s F CXX obj/chrome/chrome_android_core/chrome_main_delegate_android.o
+[58746/60675] 1h20m27.53s F CXX obj/chrome/browser/core/helium_noise_settings.o
+[58747/60675] 1h20m27.54s F CXX obj/chrome/browser/core/chrome_content_browser_client.o	
+stderr:
+../../chrome/browser/chrome_content_browser_client.cc:1387:6: warning: unused function 'MaybeAddCondition' [-Wunused-function]
+ 1387 | void MaybeAddCondition(
+      |      ^~~~~~~~~~~~~~~~~
+1 warning generated.
+
+
+[58748/60675] 1h20m27.57s F CXX obj/chrome/browser/core/icon_manager.o
+[58749/60675] 1h20m27.60s F CXX obj/chrome/browser/core/chrome_resource_bundle_helper.o
+[58750/60675] 1h20m27.61s F CXX obj/chrome/android/libchrome/chrome_entry_point.o
+[58751/60675] 1h20m27.62s F CXX obj/chrome/browser/core/global_features.o
+[58752/60675] 1h20m27.63s F ACTION //chrome/browser/ui/side_panel/android:factory_java__dex(//build/toolchain/android:android_clang_arm64)
+[58753/60674] 1h20m27.64s F CXX obj/chrome/browser/core/memory_details_android.o
+[58754/60674] 1h20m27.66s F CXX obj/chrome/browser/core/intranet_redirect_detector.o
+[58755/60674] 1h20m27.67s F CXX obj/chrome/browser/core/platform_util_android.o
+[58756/60674] 1h20m27.68s F CXX obj/chrome/browser/core/shell_integration_android.o
+[58757/60674] 1h20m27.69s F CXX obj/chrome/browser/core/net_benchmarking.o
+[58758/60674] 1h20m27.72s F CXX obj/chrome/browser/core/chrome_xr_integration_client.o
+[58759/60674] 1h20m27.75s F CXX obj/chrome/browser/core/vr_ui_host_impl.o
+[58760/60674] 1h20m28.85s F ACTION //components/optimization_guide/proto:optimization_guide_proto_java__dex(//build/toolchain/android:android_clang_arm64)
+[58761/60671] 1h20m29.20s F ACTION //components/origin_matcher/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58762/60670] 1h20m29.87s F ACTION //device/bluetooth/public/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58763/60669] 1h20m31.01s F ACTION //components/policy/android:policy_java__dex(//build/toolchain/android:android_clang_arm64)
+[58764/60668] 1h20m31.50s F ACTION //media/mojo/mojom:encryption_pattern_java__dex(//build/toolchain/android:android_clang_arm64)
+[58765/60667] 1h20m32.44s F ACTION //services/viz/public/mojom:surfaces_java__dex(//build/toolchain/android:android_clang_arm64)
+[58766/60666] 1h20m32.48s F ACTION //base:content_uri_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58767/60665] 1h20m33.54s F ACTION //chrome/browser/prefs/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58768/60664] 1h20m34.79s F ACTION //components/commerce/core/android:core_java__dex(//build/toolchain/android:android_clang_arm64)
+[58769/60663] 1h20m35.02s F ACTION //chrome/browser/readaloud/android:hooks_java__dex(//build/toolchain/android:android_clang_arm64)
+[58770/60662] 1h20m35.60s F ACTION //components/browser_ui/bottomsheet/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58771/60661] 1h20m36.45s F ACTION //base:promise_java__dex(//build/toolchain/android:android_clang_arm64)
+[58772/60329] 1h20m37.88s F ACTION //components/browser_ui/accessibility/android:page_zoom_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58773/60328] 1h20m38.91s F ACTION //third_party/blink/public/mojom:authenticator_mojo_bindings_java__dex(//build/toolchain/android:android_clang_arm64)
+[58774/60320] 1h20m38.98s F ACTION //chrome/android:chrome_apk_locale_pak_assets(//build/toolchain/android:android_clang_arm64)
+[58774/60319] 1h20m38.98s S ACTION //chrome/android:chrome_apk_pak_assets(//build/toolchain/android:android_clang_arm64)
+[58775/60319] 1h20m39.07s F ACTION //tools/android/devil_util:devil_util_host(//build/toolchain/android:android_clang_arm64)
+[58776/60318] 1h20m39.13s F ACTION //components/privacy_sandbox/privacy_sandbox_attestations/preload:privacy_sandbox_attestations_assets(//build/toolchain/android:android_clang_arm64)
+[58777/60317] 1h20m39.18s F ACTION //chrome/android:chrome_apk_pak_assets(//build/toolchain/android:android_clang_arm64)
+[58778/60316] 1h20m39.36s F ACTION //tools/android/devil_util:devil_util_dist(//build/toolchain/android:android_clang_arm64)
+[58779/60312] 1h20m39.36s S ACTION //chrome/android:chrome_public_apk__apk_operations(//build/toolchain/android:android_clang_arm64)
+[58779/60312] 1h20m39.40s F ACTION //tools/android/errorprone_plugin:errorprone_plugin__header(//build/toolchain/android:android_clang_arm64)
+[58780/60311] 1h20m39.45s S ACTION //tools/android/errorprone_plugin:errorprone_plugin__compile_java(//build/toolchain/android:android_clang_arm64)
+[58780/60311] 1h20m39.47s F ACTION //chrome/android/webapk/libs/runtime_library:runtime_library_assets(//build/toolchain/android:android_clang_arm64)
+[58781/60309] 1h20m39.64s F ACTION //tools/android/errorprone_plugin:errorprone_plugin__java_binary_script(//build/toolchain/android:android_clang_arm64)
+[58782/60308] 1h20m39.69s F ACTION //chrome/android:chrome_public_apk__apk_operations(//build/toolchain/android:android_clang_arm64)
+[58783/60307] 1h20m40.14s F ACTION //media/capture/video/android:capture_java__dex(//build/toolchain/android:android_clang_arm64)
+[58784/59995] 1h20m40.38s F ACTION //components/webapps/browser/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58785/59945] 1h20m40.40s S ACTION //chrome/android:chrome_public_apk__size_info(//build/toolchain/android:android_clang_arm64)
+[58785/59945] 1h20m40.40s S ACTION //chrome/android:chrome_public_apk__final_dex(//build/toolchain/android:android_clang_arm64)
+[58785/59945] 1h20m42.05s F ACTION //tools/android/errorprone_plugin:errorprone_plugin__compile_java(//build/toolchain/android:android_clang_arm64)
+[58786/59942] 1h20m42.06s F ACTION //chrome/android:chrome_public_apk__size_info(//build/toolchain/android:android_clang_arm64)
+[58787/59941] 1h20m42.06s S ACTION //chrome/browser/xsurface:java__errorprone(//build/toolchain/android:android_clang_arm64)
+[58787/59941] 1h20m49.17s F ACTION //chrome/browser/xsurface:java__errorprone(//build/toolchain/android:android_clang_arm64)
+[58788/59940] 1h24m17.33s F ACTION //chrome/android:chrome_public_apk__final_dex(//build/toolchain/android:android_clang_arm64)
+[58789/59939] 1h24m17.33s S ACTION //chrome/android:chrome_public_apk__optimize_resources(//build/toolchain/android:android_clang_arm64)
+[58789/59939] 1h24m22.26s F ACTION //chrome/android:chrome_public_apk__optimize_resources(//build/toolchain/android:android_clang_arm64)
+[58790/59938] 1h24m22.26s S COPY gen/chrome/android/chrome_public_apk_resources_path_map.txt apks/ChromePublic.apk.pathmap.txt
+[58790/59938] 1h24m22.26s F COPY gen/chrome/android/chrome_public_apk_resources_path_map.txt apks/ChromePublic.apk.pathmap.txt
+build failed
+
+	
+noexec:276 local:58515 remote:0 cache:0 skip:32517
+  cache-write:0(err:0) fallback:0 retry:0
+fs: ops: 1341043(err:188927) / r:349909(err:0) 12.78GiB / w:4133(err:0) 59.78MiB
+
+
+ resource/capa used(err)  wait-avg |   s m |  serv-avg |   s m |
+   localexec/4 47280(13)    23.67s |▇█▅▄▅▅ |     0.12s |▂█▃▂▂▂ |
+ pool=action/4  11166(0)  9m16.62s |▂▂▂▂▆██|     1.72s | ▂█▆▂▂ |
+   pool=link/1     69(0)    29.83s |█▂▃▄▅▅ |     8.37s |  ██▆▂ |
+shutdown cloud logging/monitoring done 23.874µs
+
+1h24m23.00s Build Failure: 58791 done, 13 failed, 1146 remaining - 11.61/s
+ cannot make progress due to previous 13 errors: exit=1
+see ./out/Default/siso_output for full command line and output
+ or ./out/Default/siso.INFO
+use ./out/Default/siso_failed_commands.sh to re-run failed commands
