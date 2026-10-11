@@ -1,0 +1,36 @@
+==> cloning helium-linux into /home/runner/build/zade-linux
+Cloning into '/home/runner/build/zade-linux'...
+Submodule 'helium-chromium' (https://github.com/imputnet/helium.git) registered for path 'helium-chromium'
+Cloning into '/home/runner/build/zade-linux/helium-chromium'...
+Submodule path 'helium-chromium': checked out '9aa23f3cd9e5e6bcb91c8c8029b738e8da2de493'
+==> rebranding as Zade
+Rebranded /home/runner/build/zade-linux as Zade (zade, io.github.zaltstar.zade)
+  - product name: 186 patch lines in 57 patches
+  - translations: 66 source strings, 5348 translated strings in 81 languages
+  - name substitution: Chrome/Chromium now become the new name
+  - URL scheme: zade://
+  - BRANDING: company set to you; copyright line keeps crediting The Helium Authors
+  - endpoints: crash uploads disabled; updates -> https://updates.invalid/; services -> https://services.helium.imput.net
+  - linux: binary "zade", zade.desktop, profile in ~/.config/io.github.zaltstar.zade
+  - renamed package/helium.desktop -> package/zade.desktop
+  - renamed package/helium-wrapper.sh -> package/zade-wrapper.sh
+  - renamed package/helium-wrapper-appimage.sh -> package/zade-wrapper-appimage.sh
+  - renamed package/helium-bin.spec -> package/zade-bin.spec
+  - renamed package/net.imput.helium.metainfo.xml -> package/io.github.zaltstar.zade.metainfo.xml
+  - packaging: zade.desktop, zade-bin package, AppImage updates from Zalt-STAR/Zade-Browser
+  - logo: 10 files replaced with the placeholder mark
+  - FORK_NOTICE.md written (states that this is a modified Helium, with date)
+Kept as-is, because these lines must match third-party code being patched:
+  - helium-chromium/patches/helium/core/ublock-setup-sources.patch: "title": "Helium filters – Annoyances",
+  - helium-chromium/patches/helium/core/ublock-setup-sources.patch: "parent": "Helium filters",
+  - helium-chromium/patches/helium/core/ublock-setup-sources.patch: "title": "Helium filters – Unbreak",
+
+Done. Your fork is in /home/runner/build/zade-linux (branch "zade" in both repos).
+
+Build it (needs Docker; takes hours and a lot of disk):
+    cd "/home/runner/build/zade-linux" && scripts/docker-build.sh
+
+Then run it:
+    "/home/runner/build/zade-linux/build/src/out/Default/zade"
+
+See README.md in the kit for packaging and publishing.
