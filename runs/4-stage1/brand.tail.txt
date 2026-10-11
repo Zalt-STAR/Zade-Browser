@@ -1,0 +1,6 @@
+
+==> applying Android branding
+Branded /home/runner/build/zade-android/src for Android
+  - app name: Zade (launcher label and widget titles)
+  - launcher icons: 15 PNGs across 5 densities, plus the themed (monochrome) icon
+  - package ID: io.github.zaltstar.zade
