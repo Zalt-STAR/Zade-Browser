@@ -1,0 +1,250 @@
+[58928/59787] 1h31m49.33s F ACTION //base:content_uri_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58929/59786] 1h31m50.09s F ACTION //chrome/android/modules/on_demand:impl_java__dex(//build/toolchain/android:android_clang_arm64)
+[58930/59785] 1h31m51.77s F ACTION //base:process_launcher_java__dex(//build/toolchain/android:android_clang_arm64)
+[58931/59784] 1h31m51.99s F ACTION //components/browser_ui/bottomsheet/android/internal:java__dex(//build/toolchain/android:android_clang_arm64)
+[58932/59783] 1h31m52.62s F ACTION //services/network/public/mojom:mojom_structured_headers_java__dex(//build/toolchain/android:android_clang_arm64)
+[58933/59782] 1h31m54.11s F ACTION //components/android_autofill/browser:java__dex(//build/toolchain/android:android_clang_arm64)
+[58934/59781] 1h31m54.61s F ACTION //chrome/browser/consent_auditor/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58935/59780] 1h31m55.31s F ACTION //chrome/browser/task_manager/internal/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58936/59779] 1h31m55.53s F ACTION //components/digital_goods/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58937/59778] 1h31m57.67s F ACTION //chrome/browser/android/extensions:java__dex(//build/toolchain/android:android_clang_arm64)
+[58938/59777] 1h31m58.78s F ACTION //base:path_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58939/59775] 1h31m58.83s F ACTION //chrome/browser/selection/android:java__dex(//build/toolchain/android:android_clang_arm64)
+[58940/59775] 1h31m59.44s F ACTION //chrome/browser/ui/webui/signin/batch_upload:mojo_bindings__generator(//build/toolchain/android:android_clang_arm64)
+[58941/59772] 1h31m59.44s S CXX obj/chrome/chrome_android_core/chrome_jni_onload.o
+[58941/59772] 1h31m59.45s S CXX obj/chrome/chrome_android_core/chrome_main_delegate.o
+[58941/59772] 1h31m59.45s S CXX obj/chrome/browser/core/after_startup_task_utils.o
+[58941/59772] 1h31m59.45s S CXX obj/chrome/browser/core/resources_util.o
+[58941/59771] 1h31m59.45s S CXX obj/chrome/browser/core/about_flags.o
+[58941/59771] 1h31m59.45s S CXX obj/chrome/browser/core/chrome_crash_reporter_client.o
+[58941/59771] 1h31m59.45s S CXX obj/chrome/browser/core/shutdown_signal_handlers_posix.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/vr_ui_host_impl.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/chrome_xr_integration_client.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/shell_integration_android.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/platform_util_android.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/memory_details_android.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/incognito_utils_android.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/icon_loader_android.o
+[58941/59771] 1h31m59.47s S CXX obj/chrome/browser/ui/webui/signin/batch_upload/mojo_bindings/batch_upload.mojom.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/renderer_preferences_util.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/composeplate_utils.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/chrome_android_core/chrome_main_delegate_android.o
+[58941/59771] 1h31m59.47s S CXX obj/chrome/browser/core/price_tracking_utils_android.o
+[58941/59771] 1h31m59.47s S CXX obj/chrome/browser/core/platform_util_internal.o
+[58941/59771] 1h31m59.47s S CXX obj/chrome/browser/core/memory_details.o
+[58941/59771] 1h31m59.47s S CXX obj/chrome/browser/core/net_benchmarking.o
+[58941/59771] 1h31m59.48s S CXX obj/chrome/browser/core/intranet_redirect_detector.o
+[58941/59771] 1h31m59.48s S CXX obj/chrome/browser/core/chrome_content_browser_client_android.o
+[58941/59771] 1h31m59.48s S CXX obj/chrome/browser/core/icon_manager.o
+[58941/59771] 1h31m59.48s S CXX obj/chrome/browser/core/chrome_browser_main_android.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/process_singleton_internal.o
+[58941/59771] 1h31m59.48s S CXX obj/chrome/android/libchrome/chrome_entry_point.o
+[58941/59771] 1h31m59.46s S CXX obj/chrome/browser/core/process_resource_usage.o
+[58941/59771] 1h31m59.48s S CXX obj/chrome/browser/core/shopping_service_factory_android.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/global_features.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/font_family_cache.o
+[58941/59771] 1h31m59.50s S CXX obj/chrome/browser/core/shell_integration.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_resource_bundle_helper.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_content_browser_client_receiver_bindings.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_android.o
+[58941/59771] 1h31m59.50s S CXX obj/chrome/browser/core/chrome_browser_interface_binders.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/after_startup_task_utils_android.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_content_browser_client_navigation_throttles.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_content_browser_client_binder_policies.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_content_browser_client.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_browser_main.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/browser_process_platform_part_android.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/universal_web_contents_observers.o
+[58941/59771] 1h31m59.50s S CXX obj/chrome/browser/core/unexpire_flags.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_features.o
+[58941/59771] 1h31m59.50s S CXX obj/chrome/browser/core/helium_noise_settings.o
+[58941/59771] 1h31m59.50s S CXX obj/chrome/browser/core/startup_data.o
+[58941/59771] 1h31m59.51s S CXX obj/chrome/browser/core/chrome_browser_field_trials.o
+[58941/59771] 1h31m59.52s S CXX obj/chrome/browser/core/browser_process_impl.o
+[58941/59771] 1h31m59.52s S CXX obj/chrome/browser/core/browser_about_handler.o
+[58941/59771] 1h31m59.49s S CXX obj/chrome/browser/core/file_select_helper.o
+[58941/59771] 1h31m59.52s F CXX obj/chrome/browser/core/resources_util.o
+[58942/59771] 1h31m59.56s F CXX obj/chrome/browser/core/chrome_crash_reporter_client.o
+[58943/59771] 1h31m59.58s F CXX obj/chrome/browser/core/after_startup_task_utils.o
+[58944/59771] 1h31m59.58s F CXX obj/chrome/browser/core/shutdown_signal_handlers_posix.o
+[58945/59771] 1h31m59.62s F ACTION //chrome/android:chrome_apk_locale_pak_assets(//build/toolchain/android:android_clang_arm64)
+[58946/59770] 1h31m59.62s S ACTION //chrome/android:chrome_apk_pak_assets(//build/toolchain/android:android_clang_arm64)
+[58946/59770] 1h31m59.69s F CXX obj/chrome/browser/core/file_select_helper.o
+[58947/59770] 1h31m59.72s F CXX obj/chrome/chrome_android_core/chrome_jni_onload.o
+[58948/59770] 1h31m59.74s F CXX obj/chrome/chrome_android_core/chrome_main_delegate_android.o
+[58949/59770] 1h32m02.25s F ACTION //tools/android/errorprone_plugin:errorprone_plugin__header(//build/toolchain/android:android_clang_arm64)
+[58950/59769] 1h32m02.29s S ACTION //tools/android/errorprone_plugin:errorprone_plugin__compile_java(//build/toolchain/android:android_clang_arm64)
+[58950/59769] 1h32m02.51s F ACTION //tools/android/devil_util:devil_util_dist(//build/toolchain/android:android_clang_arm64)
+[58951/59768] 1h32m02.60s F ACTION //chrome/android:chrome_apk_pak_assets(//build/toolchain/android:android_clang_arm64)
+[58952/59767] 1h32m03.24s F ACTION //base:time_utils_java__dex(//build/toolchain/android:android_clang_arm64)
+[58953/59414] 1h32m03.27s F ACTION //chrome/browser/ui/android/omnibox:partner_location_descriptor_proto_java__dex(//build/toolchain/android:android_clang_arm64)
+[58954/59412] 1h32m03.41s F ACTION //tools/android/errorprone_plugin:errorprone_plugin__java_binary_script(//build/toolchain/android:android_clang_arm64)
+[58955/59411] 1h32m03.44s F ACTION //tools/android/devil_util:devil_util_host(//build/toolchain/android:android_clang_arm64)
+[58955/59407] 1h32m03.44s S ACTION //chrome/android:chrome_public_apk__apk_operations(//build/toolchain/android:android_clang_arm64)
+[58956/59407] 1h32m03.47s F ACTION //components/privacy_sandbox/privacy_sandbox_attestations/preload:privacy_sandbox_attestations_assets(//build/toolchain/android:android_clang_arm64)
+[58957/59406] 1h32m03.55s F ACTION //chrome/android/webapk/libs/runtime_library:runtime_library_assets(//build/toolchain/android:android_clang_arm64)
+[58958/59404] 1h32m03.61s F ACTION //chrome/android:chrome_public_apk__apk_operations(//build/toolchain/android:android_clang_arm64)
+[58959/59403] 1h32m06.23s F ACTION //services/network/public/mojom:mojom_java__dex(//build/toolchain/android:android_clang_arm64)
+[58960/59029] 1h32m06.29s S ACTION //chrome/android:chrome_public_apk__final_dex(//build/toolchain/android:android_clang_arm64)
+[58960/59029] 1h32m06.30s S ACTION //chrome/android:chrome_public_apk__size_info(//build/toolchain/android:android_clang_arm64)
+[58960/59029] 1h32m06.70s F ACTION //tools/android/errorprone_plugin:errorprone_plugin__compile_java(//build/toolchain/android:android_clang_arm64)
+[58961/59026] 1h32m06.74s S ACTION //chrome/browser/xsurface:java__errorprone(//build/toolchain/android:android_clang_arm64)
+[58961/59026] 1h32m10.08s F ACTION //chrome/android:chrome_public_apk__size_info(//build/toolchain/android:android_clang_arm64)
+[58962/59025] 1h32m11.36s F CXX obj/chrome/browser/core/browser_about_handler.o
+[58963/59025] 1h32m11.57s F CXX obj/chrome/browser/core/chrome_browser_field_trials.o
+[58964/59025] 1h32m11.67s F CXX obj/chrome/browser/core/startup_data.o
+[58965/59025] 1h32m11.74s F CXX obj/chrome/browser/core/helium_noise_settings.o
+[58966/59025] 1h32m18.80s F ACTION //chrome/browser/xsurface:java__errorprone(//build/toolchain/android:android_clang_arm64)
+[58967/59024] 1h32m44.60s F CXX obj/chrome/chrome_android_core/chrome_main_delegate.o
+[58967/59024] 1h32m44.61s F CXX obj/chrome/browser/core/unexpire_flags.o
+[58969/59024] 1h32m44.99s F CXX obj/chrome/browser/core/universal_web_contents_observers.o
+[58970/59024] 1h32m45.05s F CXX obj/chrome/browser/core/chrome_browser_main.o
+[58971/59024] 1h32m50.05s F CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_features.o
+[58972/59024] 1h32m50.09s F CXX obj/chrome/browser/core/browser_process_platform_part_android.o
+[58973/59024] 1h32m56.04s F CXX obj/chrome/browser/core/about_flags.o
+[58974/59024] 1h33m02.38s F CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui_parts_android.o
+[58975/59024] 1h33m02.44s F CXX obj/chrome/browser/core/chrome_content_browser_client_binder_policies.o
+[58976/59024] 1h33m02.63s F CXX obj/chrome/browser/core/chrome_content_browser_client_navigation_throttles.o
+[58977/59024] 1h33m02.65s F CXX obj/chrome/browser/core/after_startup_task_utils_android.o
+[58978/59024] 1h33m02.82s F CXX obj/chrome/browser/core/chrome_browser_interface_binders.o
+[58979/59024] 1h33m02.94s F CXX obj/chrome/browser/core/chrome_content_browser_client_receiver_bindings.o
+[58980/59024] 1h33m02.95s F CXX obj/chrome/browser/core/chrome_resource_bundle_helper.o
+[58981/59024] 1h33m03.00s F CXX obj/chrome/browser/core/shell_integration.o
+[58982/59024] 1h33m03.05s F CXX obj/chrome/browser/core/font_family_cache.o
+[58983/59024] 1h33m03.16s F CXX obj/chrome/browser/core/global_features.o
+[58984/59024] 1h33m03.22s F CXX obj/chrome/browser/core/chrome_browser_main_android.o
+[58985/59024] 1h33m03.25s F CXX obj/chrome/browser/core/process_resource_usage.o
+[58986/59024] 1h33m03.30s F CXX obj/chrome/browser/core/shopping_service_factory_android.o
+[58987/59024] 1h33m03.31s F CXX obj/chrome/android/libchrome/chrome_entry_point.o
+[58988/59024] 1h33m03.36s F CXX obj/chrome/browser/core/process_singleton_internal.o
+[58989/59024] 1h33m03.48s F CXX obj/chrome/browser/core/composeplate_utils.o
+[58990/59024] 1h33m03.53s F CXX obj/chrome/browser/core/icon_manager.o
+[58991/59024] 1h33m03.59s F CXX obj/chrome/browser/core/chrome_content_browser_client_android.o
+[58992/59024] 1h33m03.68s F CXX obj/chrome/browser/core/intranet_redirect_detector.o
+[58993/59024] 1h33m03.79s F CXX obj/chrome/browser/core/net_benchmarking.o
+[58994/59024] 1h33m03.92s F CXX obj/chrome/browser/core/memory_details.o
+[58995/59024] 1h33m03.98s F CXX obj/chrome/browser/core/platform_util_internal.o
+[58996/59024] 1h33m04.06s F CXX obj/chrome/browser/core/price_tracking_utils_android.o
+[58997/59024] 1h33m04.19s F CXX obj/chrome/browser/core/renderer_preferences_util.o
+[58998/59024] 1h33m04.23s F CXX obj/chrome/browser/core/icon_loader_android.o
+[58999/59024] 1h33m04.35s F CXX obj/chrome/browser/ui/webui/signin/batch_upload/mojo_bindings/batch_upload.mojom.o
+[59000/59023] 1h33m04.45s F CXX obj/chrome/browser/core/incognito_utils_android.o
+[59001/59023] 1h33m04.53s F CXX obj/chrome/browser/core/memory_details_android.o
+[59002/59023] 1h33m04.59s F CXX obj/chrome/browser/core/platform_util_android.o
+[59003/59023] 1h33m04.66s F CXX obj/chrome/browser/core/shell_integration_android.o
+[59004/59023] 1h33m04.78s F CXX obj/chrome/browser/core/chrome_xr_integration_client.o
+[59005/59023] 1h33m04.88s F CXX obj/chrome/browser/core/vr_ui_host_impl.o
+[59006/59023] 1h33m18.34s F CXX obj/chrome/browser/core/browser_process_impl.o
+[59007/59023] 1h33m20.99s F CXX obj/chrome/browser/core/chrome_browser_interface_binders_webui.o
+[59008/59023] 1h34m04.48s F CXX obj/chrome/browser/core/chrome_content_browser_client.o	
+stderr:
+../../chrome/browser/chrome_content_browser_client.cc:1387:6: warning: unused function 'MaybeAddCondition' [-Wunused-function]
+ 1387 | void MaybeAddCondition(
+      |      ^~~~~~~~~~~~~~~~~
+1 warning generated.
+
+
+[59009/59020] 1h34m04.54s S SOLINK ./libchrome.so
+[59009/59020] 1h36m30.18s F ACTION //chrome/android:chrome_public_apk__final_dex(//build/toolchain/android:android_clang_arm64)
+[59010/59019] 1h36m30.18s S ACTION //chrome/android:chrome_public_apk__optimize_resources(//build/toolchain/android:android_clang_arm64)
+[59010/59019] 1h36m35.80s F ACTION //chrome/android:chrome_public_apk__optimize_resources(//build/toolchain/android:android_clang_arm64)
+[59011/59018] 1h36m35.80s S COPY gen/chrome/android/chrome_public_apk_resources_path_map.txt apks/ChromePublic.apk.pathmap.txt
+[59011/59018] 1h36m35.80s F COPY gen/chrome/android/chrome_public_apk_resources_path_map.txt apks/ChromePublic.apk.pathmap.txt
+[59012/59017] 1h36m46.39s E SOLINK ./libchrome.so	
+FAILED: f88b5d54-662f-46c3-83fd-dc27729177fb "./libchrome.so" SOLINK ./libchrome.so
+err: exit=1
+"python3" "../../build/toolchain/gcc_solink_wrapper.py" --readelf="../../third_party/llvm-build/Release+Asserts/bin/llvm-readelf" --nm="../../third_party/llvm-build/Release+Asserts/bin/llvm-nm"  --tocfile="./libchrome.so.TOC" --output="./libchrome.so" --symbols-file="./lib.unstripped/libchrome.so" -- ../../third_party/llvm-build/Release+Asserts/bin/clang++ -shared -Wl,-soname="libchrome.so" -Wl,--version-script=gen/chrome/android/libchrome_linker_script.txt -Wl,--hash-style=gnu -fPIC -Wl,--exclude-libs=libvpx_assembly_arm.a -Wl,-z,max-page-size=16384 --target=aarch64-linux-android29 -no-canonical-prefixes -Wl,--warn-shared-textrel -Wl,--gc-sections -Wl,-z,defs -Wl,--as-needed --unwindlib=none -nostdlib++ --sysroot=../../third_party/android_toolchain/ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot --ld-path=../../buildtools/third_party/mold/cipd/mold -Wl,--fatal-warnings -Wl,--build-id -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--icf=all -Wl,--no-rosegment -Wl,--pack-dyn-relocs=relr -Wl,--undefined-version -Wl,--version-script=gen/third_party/androidx/third_party/ink/ink_jni_registration.ver -Wl,-wrap,aligned_alloc -Wl,-wrap,calloc -Wl,-wrap,free -Wl,-wrap,malloc -Wl,-wrap,memalign -Wl,-wrap,posix_memalign -Wl,-wrap,pvalloc -Wl,-wrap,realloc -Wl,-wrap,valloc -Wl,-wrap,malloc_usable_size -Wl,-wrap,realpath -Wl,-wrap,strdup -Wl,-wrap,strndup -Wl,-wrap,getcwd -Wl,-wrap,asprintf -Wl,-wrap,vasprintf -o "./libchrome.so" "-Wl,--separate-debug-file=./lib.unstripped/libchrome.so" -Wl,--no-detach @"./libchrome.so.rsp" obj/third_party/rust/cxx/v1/lib/libcxx_lib.rlib obj/third_party/rust/foldhash/v0_2/lib/libfoldhash_lib.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libstd_std.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/liballoc_alloc.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libcompiler_builtins_compiler_builtins.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libcore_core.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libprofiler_builtins_profiler_builtins.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libcfg_if_cfg_if.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/librustc_std_workspace_core_rustc_std_workspace_core.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libhashbrown_hashbrown.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/librustc_std_workspace_alloc_rustc_std_workspace_alloc.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libpanic_abort_panic_abort.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/liblibc_libc.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/librustc_demangle_rustc_demangle.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libstd_detect_std_detect.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libunwind_unwind.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libaddr2line_addr2line.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libgimli_gimli.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libminiz_oxide_miniz_oxide.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libadler2_adler2.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libobject_object.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libmemchr_memchr.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libgetopts_getopts.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/librustc_std_workspace_std_rustc_std_workspace_std.rlib local_rustc_sysroot/lib/rustlib/aarch64-linux-android/lib/libtest_test.rlib obj/build/rust/allocator/liballocator_6ead5877.rlib obj/build/rust/allocator/liballoc_error_handler_impl_ffi.rlib obj/build/rust/allocator/liballocator_impls_ffi.rlib obj/base/logging/rust_logger/librust_logger_8bf89ddc.rlib obj/base/logging/liblog_severity_bindgen_5c984a66.rlib obj/third_party/rust/log/v0_4/lib/liblog_lib.rlib obj/build/rust/chromium_prelude/libchromium.rlib obj/third_party/rust/serde_json_lenient/v0_2/wrapper/libwrapper_a1515e45.rlib obj/third_party/rust/serde/v1/lib/libserde_lib.rlib obj/third_party/rust/serde_core/v1/lib/libserde_core_lib.rlib obj/third_party/rust/serde_json_lenient/v0_2/lib/libserde_json_lenient_lib.rlib obj/third_party/rust/itoa/v1/lib/libitoa_lib.rlib obj/third_party/rust/memchr/v2/lib/libmemchr_lib.rlib obj/third_party/rust/ryu/v1/lib/libryu_lib.rlib obj/crypto/libtpm_e7a2b410.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/rs_std/libdyn_erased_future.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/rs_std/liberased_future.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/rs_std/liblossy_formatter_for_bindings_rs.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/rs_std/liblossy_formatter.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/ffi_11/libffi_11.rlib obj/build/rust/std/rules/libcore_crubit_e1244d42.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/libbridge_rust.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/libcref.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/libctor.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/libforward_declare.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/libhash_rust.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/liboops.rlib obj/third_party/rust-toolchain/lib/third_party/crubit/support/liboperator.rlib obj/build/rust/std/rules/liballoc_crubit_94f77c46.rlib obj/build/rust/std/rules/libstd_crubit_238112ee.rlib obj/components/cbor/rust/libcbor_crubit_9c32a0e1.rlib obj/components/cbor/rust/libcbor.rlib obj/third_party/rust/icu_capi/v2/lib/libicu_capi_lib.rlib obj/third_party/rust/diplomat_runtime/v0_15/lib/libdiplomat_runtime_lib.rlib obj/third_party/rust/icu_locale/v2/lib/libicu_locale_lib.rlib obj/third_party/rust/icu_collections/v2/lib/libicu_collections_lib.rlib obj/third_party/rust/potential_utf/v0_1/lib/libpotential_utf_lib.rlib obj/third_party/rust/writeable/v0_6/lib/libwriteable_lib.rlib obj/third_party/rust/either/v1/lib/libeither_lib.rlib obj/third_party/rust/zerovec/v0_11/lib/libzerovec_lib.rlib obj/third_party/rust/yoke/v0_8/lib/libyoke_lib.rlib obj/third_party/rust/stable_deref_trait/v1/lib/libstable_deref_trait_lib.rlib obj/third_party/rust/zerofrom/v0_1/lib/libzerofrom_lib.rlib obj/third_party/rust/utf8_iter/v1/lib/libutf8_iter_lib.rlib obj/third_party/rust/icu_locale_core/v2/lib/libicu_locale_core_lib.rlib obj/third_party/rust/litemap/v0_8/lib/liblitemap_lib.rlib obj/third_party/rust/tinystr/v0_8/lib/libtinystr_lib.rlib obj/third_party/rust/icu_locale_data/v2/lib/libicu_locale_data_lib.rlib obj/third_party/rust/icu_provider/v2/lib/libicu_provider_lib.rlib obj/third_party/rust/zerotrie/v0_2/lib/libzerotrie_lib.rlib obj/third_party/rust/icu_normalizer/v2/lib/libicu_normalizer_lib.rlib obj/third_party/rust/icu_normalizer_data/v2/lib/libicu_normalizer_data_lib.rlib obj/third_party/rust/smallvec/v1/lib/libsmallvec_lib.rlib obj/third_party/rust/utf16_iter/v1/lib/libutf16_iter_lib.rlib obj/third_party/rust/write16/v1/lib/libwrite16_lib.rlib obj/third_party/rust/icu_provider_adapters/v2/lib/libicu_provider_adapters_lib.rlib obj/third_party/rust/sfv/v0_15/wrapper/libwrapper_c8af1626.rlib obj/third_party/rust/sfv/v0_15/lib/libsfv_lib.rlib obj/third_party/rust/base64/v0_22/lib/libbase64_lib.rlib obj/third_party/rust/ref_cast/v1/lib/libref_cast_lib.rlib obj/skia/librust_bmp_ffi_e866329c.rlib obj/skia/libbridge_rust_side_e866329c.rlib obj/third_party/rust/font_types/v0_12/lib/libfont_types_lib.rlib obj/third_party/rust/bytemuck/v1/lib/libbytemuck_lib.rlib obj/third_party/rust/read_fonts/v0_43/lib/libread_fonts_lib.rlib obj/third_party/rust/once_cell/v1/lib/libonce_cell_lib.rlib obj/third_party/rust/skrifa/v0_46/lib/libskrifa_lib.rlib obj/skia/libskia_rust_common.rlib obj/third_party/rust/image/v0_25/lib/libimage_lib.rlib obj/third_party/rust/byteorder_lite/v0_1/lib/libbyteorder_lite_lib.rlib obj/third_party/rust/moxcms/v0_8/lib/libmoxcms_lib.rlib obj/third_party/rust/num_traits/v0_2/lib/libnum_traits_lib.rlib obj/third_party/rust/pxfm/v0_1/lib/libpxfm_lib.rlib obj/third_party/rust/png/v0_18/lib/libpng_lib.rlib obj/third_party/rust/bitflags/v2/lib/libbitflags_lib.rlib obj/third_party/rust/crc32fast/v1/lib/libcrc32fast_lib.rlib obj/third_party/rust/cfg_if/v1/lib/libcfg_if_lib.rlib obj/third_party/rust/fdeflate/v0_3/lib/libfdeflate_lib.rlib obj/third_party/rust/simd_adler32/v0_3/lib/libsimd_adler32_lib.rlib obj/third_party/rust/flate2/v1/lib/libflate2_lib.rlib obj/third_party/rust/miniz_oxide/v0_9/lib/libminiz_oxide_lib.rlib obj/third_party/rust/adler2/v2/lib/libadler2_lib.rlib obj/third_party/rust/miniz_oxide/v0_8/lib/libminiz_oxide_lib.rlib obj/skia/librust_exif_ffi_e866329c.rlib obj/skia/librust_icc_ffi_e866329c.rlib obj/skia/librust_ico_ffi_e866329c.rlib obj/skia/librust_png_ffi_e866329c.rlib obj/skia/librust_jpeg_ffi_e866329c.rlib obj/third_party/rust/jpeg_encoder/v0_7/lib/libjpeg_encoder_lib.rlib obj/third_party/rust/zune_core/v0_5/lib/libzune_core_lib.rlib obj/third_party/rust/zune_jpeg/v0_5/lib/libzune_jpeg_lib.rlib obj/third_party/harfbuzz/harfbuzz_rust/libharfbuzz_rust_harfbuzz_rust.rlib obj/third_party/rust/harfrust/v0_13/lib/libharfrust_lib.rlib obj/third_party/rust/icu_properties/v2/lib/libicu_properties_lib.rlib obj/third_party/rust/icu_properties_data/v2/lib/libicu_properties_data_lib.rlib obj/media/formats/libsafe_mpeg_audio_parsers_2082a5e8.rlib obj/media/parsers/libsafe_parsers_552907cf.rlib obj/media/filters/libsymphonia_decoder_bridge_3086f658.rlib obj/third_party/rust/symphonia/v0_6/lib/libsymphonia_lib.rlib obj/third_party/rust/lazy_static/v1/lib/liblazy_static_lib.rlib obj/third_party/rust/symphonia_bundle_flac/v0_6/lib/libsymphonia_bundle_flac_lib.rlib obj/third_party/rust/symphonia_common/v0_6/lib/libsymphonia_common_lib.rlib obj/third_party/rust/symphonia_core/v0_6/lib/libsymphonia_core_lib.rlib obj/third_party/rust/num_complex/v0_4/lib/libnum_complex_lib.rlib obj/third_party/rust/rustfft/v6/lib/librustfft_lib.rlib obj/third_party/rust/num_integer/v0_1/lib/libnum_integer_lib.rlib obj/third_party/rust/primal_check/v0_3/lib/libprimal_check_lib.rlib obj/third_party/rust/strength_reduce/v0_2/lib/libstrength_reduce_lib.rlib obj/third_party/rust/transpose/v0_2/lib/libtranspose_lib.rlib obj/third_party/rust/symphonia_metadata/v0_6/lib/libsymphonia_metadata_lib.rlib obj/third_party/rust/regex_lite/v0_1/lib/libregex_lite_lib.rlib obj/third_party/rust/symphonia_bundle_mp3/v0_6/lib/libsymphonia_bundle_mp3_lib.rlib obj/third_party/rust/symphonia_codec_pcm/v0_6/lib/libsymphonia_codec_pcm_lib.rlib obj/third_party/rust/symphonia_codec_vorbis/v0_6/lib/libsymphonia_codec_vorbis_lib.rlib obj/third_party/rust/symphonia_format_isomp4/v0_6/lib/libsymphonia_format_isomp4_lib.rlib obj/third_party/rust/symphonia_format_mkv/v0_6/lib/libsymphonia_format_mkv_lib.rlib obj/third_party/rust/symphonia_format_ogg/v0_6/lib/libsymphonia_format_ogg_lib.rlib obj/third_party/rust/symphonia_format_riff/v0_6/lib/libsymphonia_format_riff_lib.rlib obj/third_party/rust/extended/v0_1/lib/libextended_lib.rlib obj/third_party/blink/common/rust_crash/librs_5d4abcfd.rlib obj/components/web_package/signed_web_bundles/rust/libsigned_web_bundles_rust_crubit_1ddc13a7.rlib obj/components/web_package/signed_web_bundles/rust/libsigned_web_bundles_rust.rlib obj/third_party/boringssl/bssl_crypto/libbssl_crypto_bssl_crypto.rlib obj/third_party/boringssl/bssl_sys/libbssl_sys_bssl_sys.rlib obj/third_party/boringssl/bssl_macros/libbssl_macros_bssl_macros.rlib obj/components/base32/libbase32_rust_8b9bb8d3.rlib obj/services/data_decoder/xml/libxml_parser_rs_5dc62960.rlib obj/third_party/rust/xml/v1/lib/libxml_lib.rlib obj/ui/android/libtexture_compressor_c5f97ae3.rlib obj/content/browser/libchild_process_security_policy_impl_74420ed1.rlib obj/content/browser/libcontent_browser_id_types.rlib obj/base/libfeature_40cec81c.rlib obj/base/libbase_file_path.rlib obj/base/libunguessable_token_40cec81c.rlib obj/third_party/rust/subtle/v2/lib/libsubtle_lib.rlib obj/content/common/libcontent_common_id_types.rlib obj/storage/common/libstorage_common.rlib obj/url/liburl.rlib obj/third_party/rust/temporal_capi/v0_2/lib/libtemporal_capi_lib.rlib obj/third_party/rust/icu_calendar/v2/lib/libicu_calendar_lib.rlib obj/third_party/rust/calendrical_calculations/v0_2/lib/libcalendrical_calculations_lib.rlib obj/third_party/rust/core_maths/v0_1/lib/libcore_maths_lib.rlib obj/third_party/rust/libm/v0_2/lib/liblibm_lib.rlib obj/third_party/rust/icu_calendar_data/v2/lib/libicu_calendar_data_lib.rlib obj/third_party/rust/temporal_rs/v0_2/lib/libtemporal_rs_lib.rlib obj/third_party/rust/ixdtf/v0_6/lib/libixdtf_lib.rlib obj/third_party/rust/timezone_provider/v0_2/lib/libtimezone_provider_lib.rlib obj/third_party/rust/zoneinfo64/v0_3/lib/libzoneinfo64_lib.rlib obj/third_party/rust/resb/v0_1/lib/libresb_lib.rlib obj/content/browser/libfontations_name_table_ffi_74420ed1.rlib obj/third_party/rust/rustc_demangle_capi/v0_1/lib/librustc_demangle_capi_lib.rlib obj/third_party/rust/rustc_demangle/v0_1/lib/librustc_demangle_lib.rlib obj/components/skills/internal/libskill_parser_rust_10f437d2.rlib obj/components/browser_actuator/internal/transport/proto_stream_client/libstream_body_bridge_991612d8.rlib obj/components/browser_actuator/internal/transport/proto_stream_client/libstream_body_parser_991612d8.rlib obj/third_party/rust/qr_code/v2/liblib_crubit_89244397.rlib obj/third_party/rust/qr_code/v2/lib/libqr_code_lib.rlib obj/components/facilitated_payments/core/validation/libpix_validator_rs_ffi_glue_3db90026.rlib obj/components/facilitated_payments/core/validation/libpix_validator_rs_3db90026.rlib obj/third_party/openscreen/src/util/libjson_serde_14f3d472.rlib obj/components/private_verification_tokens/common/athm_ffi/libathm_ffi_crubit_616a0d53.rlib obj/components/private_verification_tokens/common/athm_ffi/libathm_ffi_2b5bb122.rlib obj/third_party/anonymous_tokens/libathm.rlib obj/third_party/rust/zeroize/v1/lib/libzeroize_lib.rlib obj/components/user_data_importer/utility/libzip_ffi_glue_dcc7af32.rlib obj/third_party/rust/anyhow/v1/lib/libanyhow_lib.rlib obj/third_party/rust/zip/v8/lib/libzip_lib.rlib obj/third_party/rust/indexmap/v2/lib/libindexmap_lib.rlib obj/third_party/rust/equivalent/v1/lib/libequivalent_lib.rlib obj/third_party/rust/hashbrown/v0_17/lib/libhashbrown_lib.rlib obj/third_party/rust/typed_path/v0_12/lib/libtyped_path_lib.rlib obj/third_party/crabbyavif/libcrabbyavif_3e652670.rlib obj/third_party/crabbyavif/libdav1d_sys.rlib obj/third_party/crabbyavif/liblibyuv_sys.rlib obj/third_party/rust/libc/v0_2/lib/liblibc_lib.rlib obj/third_party/rust/jxl/v0_7/wrapper/libjxl_rs.rlib obj/third_party/rust/jxl/v0_7/lib/libjxl_lib.rlib obj/third_party/rust/array_init/v2/lib/libarray_init_lib.rlib obj/third_party/rust/byteorder/v1/lib/libbyteorder_lib.rlib obj/third_party/rust/jxl_simd/v0_7/lib/libjxl_simd_lib.rlib obj/third_party/rust/jxl_transforms/v0_7/lib/libjxl_transforms_lib.rlib obj/third_party/rust/thiserror/v2/lib/libthiserror_lib.rlib obj/third_party/blink/renderer/platform/librustfft_ffi_854ab6f2.rlib obj/third_party/blink/renderer/platform/fonts/libfont_format_crubit_a93e27d7.rlib obj/third_party/blink/renderer/platform/fonts/libfont_format_1bef5ad5.rlib obj/third_party/blink/renderer/platform/fonts/libift_patcher_rs_crubit_29f150ad.rlib obj/third_party/blink/renderer/platform/fonts/libift_patcher_rs_1bef5ad5.rlib obj/third_party/rust/incremental_font_transfer/v0_7/lib/libincremental_font_transfer_lib.rlib obj/third_party/rust/shared_brotli_patch_decoder/v0_1/lib/libshared_brotli_patch_decoder_lib.rlib obj/third_party/rust/skera/v0_6/lib/libskera_lib.rlib obj/third_party/rust/write_fonts/v0_52/lib/libwrite_fonts_lib.rlib obj/third_party/blink/renderer/core/libxml_ffi_364fb5ba.rlib 
+build step: solink "./libchrome.so"
+siso_rule: clang/solink
+stderr:
+mold: error: undefined symbol: safe_browsing::ShowAdvancedProtectionSettings(ui::WindowAndroid*)
+>>> referenced by chrome_settings_page_helper.cc
+>>>               obj/chrome/browser/interstitials/impl/chrome_settings_page_helper.o:(security_interstitials::ChromeSettingsPageHelper::OpenAdvancedProtectionSettings(content::WebContents&))
+mold: error: undefined symbol: ChromePasswordReuseDetectionManagerClient::kUserDataKey
+>>> referenced by all_passwords_bottom_sheet_controller.cc
+>>>               obj/chrome/browser/password_manager/impl/all_passwords_bottom_sheet_controller.o:(AllPasswordsBottomSheetController::AllPasswordsBottomSheetController(content::WebContents*, password_manager::PasswordStoreInterface*, password_manager::PasswordStoreInterface*, base::OnceCallback<void ()>, autofill::mojom::FocusedFieldType))
+>>> referenced by all_passwords_bottom_sheet_controller.cc
+>>>               obj/chrome/browser/password_manager/impl/all_passwords_bottom_sheet_controller.o:(AllPasswordsBottomSheetController::AllPasswordsBottomSheetController(content::WebContents*, password_manager::PasswordStoreInterface*, password_manager::PasswordStoreInterface*, base::OnceCallback<void ()>, autofill::mojom::FocusedFieldType))
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingPasswordReuseDialogBridge_ignore
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VJ)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_isSafeBrowsingManaged
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_ZO)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_enableSafeBrowsingSettingSetLocallyPref
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VO)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingPasswordReuseDialogBridge_checkPasswords
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VJ)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_getSafeBrowsingState
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_IO)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_isHashRealTimeLookupEligibleInSession
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_Z)
+mold: error: undefined symbol: safe_browsing::GetSafeBrowsingState(PrefService const&)
+>>> referenced by tips_agent_android.cc
+>>>               obj/chrome/browser/notifications/impl/tips_agent_android.o:(TipsAgentAndroid::ScheduleNewNotification(Profile*, bool, notifications::NotificationScheduleService*))
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_setSafeBrowsingExtendedReportingEnabled
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VOZ)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingSuspiciousSiteDialogBridge_close
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VIJ)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingPasswordReuseDialogBridge_close
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VJ)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_setSafeBrowsingState
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VIO)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingSuspiciousSiteDialogBridge_goBack
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VJ)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingSuspiciousSiteDialogBridge_continueAnyway
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VJ)
+mold: error: undefined symbol: component_updater::RegisterRealTimeUrlChecksAllowlistComponent(component_updater::ComponentUpdateService*)
+>>> referenced by registration.cc
+>>>               obj/chrome/browser/component_updater/impl/registration.o:(component_updater::RegisterComponentsForUpdate())
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_getSafeBrowsingExtendedReportingManaged
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_ZO)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingSuspiciousSiteDialogBridge_onLearnMoreClicked
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_VJ)
+mold: error: undefined symbol: safe_browsing::ShowSafeBrowsingSettings(ui::WindowAndroid*, safe_browsing::SettingsAccessPoint)
+>>> referenced by chrome_settings_page_helper.cc
+>>>               obj/chrome/browser/interstitials/impl/chrome_settings_page_helper.o:(security_interstitials::ChromeSettingsPageHelper::OpenEnhancedProtectionSettings(content::WebContents*) const)
+mold: error: undefined symbol: safe_browsing::NotificationContentDetectionUkmUtil::RecordSuspiciousNotificationInteractionUkm(int, GURL const&, std::__Cr::basic_string<char, std::__Cr::char_traits<char>, std::__Cr::allocator<char> >, Profile*)
+>>> referenced by notification_platform_bridge_android.cc
+>>>               obj/chrome/browser/notifications/impl/notification_platform_bridge_android.o:(NotificationPlatformBridgeAndroid::AlwaysAllowNotifications(GURL const&, std::__Cr::basic_string<char, std::__Cr::char_traits<char>, std::__Cr::allocator<char> > const&, Profile*))
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_getSafeBrowsingExtendedReportingEnabled
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_ZO)
+mold: error: undefined symbol: Muxed_org_chromium_chrome_browser_safe_1browsing_SafeBrowsingBridge_umaValueForFile
+>>> referenced by libchrome__jni_registration.cc
+>>>               obj/chrome/android/libchrome__jni_registration_source_set/libchrome__jni_registration.o:(Java_J_N_IO)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+build failed
+
+	
+noexec:276 local:58737 remote:0 cache:0 skip:33437
+  cache-write:0(err:0) fallback:0 retry:0
+fs: ops: 1343668(err:189373) / r:350188(err:0) 12.78GiB / w:4355(err:0) 61.07MiB
+
+
+ resource/capa used(err)  wait-avg |   s m |  serv-avg |   s m |
+   localexec/4  47501(0)    35.04s |▆█▄▄▅▆▂|     0.26s |▂█▃▂▂▂ |
+ pool=action/4  11166(0) 10m38.79s |▂▂▂▂▅▇█|     1.97s | ▂█▆▂▂ |
+   pool=link/1     70(1)    32.79s |█▂▂▄▅▅ |     9.26s |  ▇█▅▂ |
+shutdown cloud logging/monitoring done 10.92µs
+
+1h36m47.19s Build Failure: 59013 done, 1 failed, 4 remaining - 10.16/s
+ cannot make progress due to previous 1 errors: exit=1
+see ./out/Default/siso_output for full command line and output
+ or ./out/Default/siso.INFO
+use ./out/Default/siso_failed_commands.sh to re-run failed commands
