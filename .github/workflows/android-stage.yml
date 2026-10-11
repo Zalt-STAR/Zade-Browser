@@ -6,6 +6,17 @@ on:
       stage:
         required: true
         type: number
+      shard:
+        description: 0-based share of the compile to do, or -1 for a full build pass
+        type: number
+        default: -1
+      shard_total:
+        type: number
+        default: 1
+      merge_deltas:
+        description: pool the compiler-cache additions saved by this run's shards first
+        type: boolean
+        default: false
     outputs:
       status:
         description: done, timeout or failed
@@ -52,29 +63,115 @@ jobs:
           restore-keys: |
             ccache-arm64-
 
+      - name: Restore shard 0 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-0
+          key: ccdelta-${{ github.run_id }}-0
+
+      - name: Restore shard 1 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-1
+          key: ccdelta-${{ github.run_id }}-1
+
+      - name: Restore shard 2 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-2
+          key: ccdelta-${{ github.run_id }}-2
+
+      - name: Restore shard 3 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-3
+          key: ccdelta-${{ github.run_id }}-3
+
+      - name: Restore shard 4 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-4
+          key: ccdelta-${{ github.run_id }}-4
+
+      - name: Restore shard 5 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-5
+          key: ccdelta-${{ github.run_id }}-5
+
+      - name: Restore shard 6 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-6
+          key: ccdelta-${{ github.run_id }}-6
+
+      - name: Restore shard 7 additions
+        if: inputs.merge_deltas
+        continue-on-error: true
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/ccdelta-7
+          key: ccdelta-${{ github.run_id }}-7
+
+      - name: Pool shard additions into the cache
+        if: inputs.merge_deltas
+        run: |
+          mkdir -p /home/runner/ccache
+          for d in /home/runner/ccdelta-*; do
+            [ -d "$d" ] || continue
+            echo "$(basename "$d"): $(find "$d" -type f | wc -l) files, $(du -sh "$d" | cut -f1)"
+            cp -rn "$d"/. /home/runner/ccache/
+            rm -rf "$d"
+          done
+          du -sh /home/runner/ccache
+
       - name: Build pass
         id: pass
         run: |
+          export SHARD_INDEX="${{ inputs.shard }}" SHARD_TOTAL="${{ inputs.shard_total }}"
+          export CCACHE_DELTA_DIR="/home/runner/ccdelta-${{ inputs.shard }}"
           bash kit/android/ci.sh
           status="$(cat "$ROOT/logs/status.txt")"
           echo "status=$status" >> "$GITHUB_OUTPUT"
-          echo "### Stage ${{ inputs.stage }}: $status" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Stage ${{ inputs.stage }} shard ${{ inputs.shard }}: $status" >> "$GITHUB_STEP_SUMMARY"
           { echo '```'; cat "$ROOT/logs/timeline.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save compiler cache
-        if: always()
+        if: always() && inputs.shard < 0
         uses: actions/cache/save@v4
         with:
           path: /home/runner/ccache
           key: ccache-arm64-${{ github.run_id }}-${{ inputs.stage }}
+
+      - name: Save this shard's cache additions
+        if: always() && inputs.shard >= 0
+        uses: actions/cache/save@v4
+        with:
+          path: /home/runner/ccdelta-${{ inputs.shard }}
+          key: ccdelta-${{ github.run_id }}-${{ inputs.shard }}
 
       - name: Publish logs
         if: always()
         run: |
           L="$ROOT/logs"; mkdir -p "$L"
           out="runs/${{ github.run_number }}-stage${{ inputs.stage }}"
+          if [ "${{ inputs.shard }}" -ge 0 ]; then out="runs/${{ github.run_number }}-shard${{ inputs.shard }}"; fi
           mkdir -p "pub/$out"
-          for f in status.txt failed_stage.txt timeline.txt ccache.txt args.gn; do
+          for f in status.txt failed_stage.txt timeline.txt ccache.txt args.gn siso_metrics.json.zst; do
             [ -f "$L/$f" ] && cp "$L/$f" "pub/$out/" || true
           done
           # Last lines of every stage log, and every error block from the compile.
@@ -94,20 +191,24 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           remote="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           # Keep earlier runs: start from the existing branch and add only this run's folder.
-          git fetch -q --depth 1 "$remote" android-build-logs && git reset -q --mixed FETCH_HEAD || true
-          git add "$out"
-          git commit -q -m "logs: run ${{ github.run_number }} stage ${{ inputs.stage }}"
-          git push -q "$remote" HEAD:refs/heads/android-build-logs
+          # Several shards publish at once, so retry when another one got there first.
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch -q --depth 1 "$remote" android-build-logs && git reset -q --mixed FETCH_HEAD || true
+            git add "$out"
+            git commit -q -m "logs: run ${{ github.run_number }} stage ${{ inputs.stage }} shard ${{ inputs.shard }}"
+            if git push -q "$remote" HEAD:refs/heads/android-build-logs; then break; fi
+            sleep $(( (RANDOM % 20) + 5 ))
+          done
 
       - name: Collect APK
-        if: steps.pass.outputs.status == 'done'
+        if: steps.pass.outputs.status == 'done' && inputs.shard < 0
         run: |
           mkdir -p apk
           cp "$ROOT"/*-android/src/out/Default/apks/ChromePublic.apk "apk/zade-android-arm64.apk"
           ls -la apk
 
       - name: Upload APK
-        if: steps.pass.outputs.status == 'done'
+        if: steps.pass.outputs.status == 'done' && inputs.shard < 0
         uses: actions/upload-artifact@v4
         with:
           name: zade-android-arm64

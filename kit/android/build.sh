@@ -173,13 +173,21 @@ stage_build() {
     say "compiling (hours)"
     # BUILD_TIMEOUT: seconds before stopping cleanly (exit 124) so a later run can
     # resume. NINJA_ARGS: extra flags, e.g. "-k 0" to collect every error in one pass.
+    # BUILD_TARGETS_FILE: build these targets (one per line) instead of the APK;
+    # used to split the compile across several machines that share a compiler cache.
+    local -a targets=(chrome_public_apk)
+    if [ -n "${BUILD_TARGETS_FILE:-}" ]; then
+        mapfile -t targets < "$BUILD_TARGETS_FILE"
+        echo "building ${#targets[@]} targets from $BUILD_TARGETS_FILE"
+    fi
     # shellcheck disable=SC2086
     if [ -n "${BUILD_TIMEOUT:-}" ]; then
         (cd "$src" && timeout -k 3m -s INT "$BUILD_TIMEOUT" \
-            autoninja ${NINJA_ARGS:-} -C out/Default chrome_public_apk)
+            autoninja ${NINJA_ARGS:-} -C out/Default "${targets[@]}")
     else
-        (cd "$src" && autoninja ${NINJA_ARGS:-} -C out/Default chrome_public_apk)
+        (cd "$src" && autoninja ${NINJA_ARGS:-} -C out/Default "${targets[@]}")
     fi
+    [ -z "${BUILD_TARGETS_FILE:-}" ] || return 0
     echo
     echo "Built: $out/apks/ChromePublic.apk"
     echo "Install on a phone connected over USB with debugging enabled:"

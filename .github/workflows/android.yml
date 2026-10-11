@@ -1,8 +1,10 @@
 name: Android build
 
-# Builds the Android APK in chained passes. Each pass runs up to six hours,
-# saves the compiler cache, and hands over to the next until the APK is built
-# or a real error stops it. Logs go to the android-build-logs branch.
+# Builds the Android APK. A Chromium compile does not fit in one six-hour job,
+# so eight machines first compile an eighth of the object files each and pool
+# what they add to the compiler cache. Chained passes then build the APK from
+# that cache, each saving it and handing over to the next until the APK is
+# built or a real error stops it. Logs go to the android-build-logs branch.
 
 on:
   push:
@@ -18,10 +20,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  shards:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    uses: ./.github/workflows/android-stage.yml
+    with:
+      stage: 0
+      shard: ${{ matrix.shard }}
+      shard_total: 8
   stage1:
+    needs: shards
+    if: ${{ !cancelled() }}
     uses: ./.github/workflows/android-stage.yml
     with:
       stage: 1
+      merge_deltas: true
   stage2:
     needs: stage1
     if: needs.stage1.outputs.status == 'timeout'
